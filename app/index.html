@@ -21,7 +21,7 @@
 </head>
 <body>
 
-		<div class="contain-to-grid sticky">	
+		<div class="contain-to-grid top-nav">	
 	    <nav class="top-bar ">
 	      <ul>
 	        <!-- Title Area -->
@@ -40,27 +40,23 @@
 	        <!-- Right Nav Section -->
 	        <ul class="right" data-magellan-expedition>
 	          
-	          <li class=" divider show-for-medium-and-up"></li>
-	          <li class="divider"></li>
-  				  <li data-magellan-arrival='resume'><a>Resume</a></li>
-  				  <li class="divider"></li>
+	          <li data-magellan-arrival='head' class="divider show-for-medium-and-up"></li>
 					  <li data-magellan-arrival='research'><a>Research</a></li>
 					  <li class="divider"></li>
 					  <li data-magellan-arrival='development'><a>Development</a></li>
 					  <li class="divider"></li>
 					  <li data-magellan-arrival='design'><a>Design</a></li>
 					  <li class="divider"></li>
-		        
+  				  <li data-magellan-arrival='resume'><a>Resume</a></li>
+  				  <li class="divider"></li>
+  				  <li data-magellan-arrival='contact'><a>Contact Now</a></li>
+  				  <li class="divider"></li>
 	        </ul>
-	        
 	      </section>
 	    </nav>
     </div>	
     
-    
-    
-    
-	<div class="row">
+	<div class="row" data-magellan-destination='head'>
 		<div class="hero-wrapper twelve">
 			<div class="twelve columns hero">
 				<h1 class="bold-header red-highlight">Remember Lenny</h1>
@@ -68,8 +64,6 @@
 			</div>
 		</div>
 	</div>
-	
-	
 	
 	<div class="row" data-magellan-destination='resume'>
 		<div class="experience column eight mobile-four">
@@ -80,17 +74,11 @@
 		<div class="column four mobile-four">
 			<div class="skills">
 				<h2 class="blue-topborder inline-block">Skills</h2>
-				<div class="skills panel">
-					<div id="skillsArea"></div>
-				</div>
+				<div id="skillsArea" class="skills panel"></div>
 			</div>
 			<div class="education">
 				<h2 class="blue-topborder inline-block">Education</h2>
-				<div class="education panel">
-					<h3 class="institution">Soka University of America</h3>
-					<h5 class="subheader">Bachelors Liberal Arts Degree, Humanities Concentration, 2007 - 2012</h5>
-	<h5 class="subheader">Activities and Societies: Executive Council 2010-2011</h5>
-				</div>
+				<div id="educationArea" class="education panel"></div>
 			</div>
 		</div>
 	</div>
@@ -160,6 +148,7 @@
 
   <script type="text/javascript">
 
+	/* Model */
 	var experienceData = { experience: [
 	  	{
 	      "position": "UX Developer",
@@ -211,7 +200,7 @@
 	      "skill": "HTML5",
 	      "colorContext": "success",
 	      "relevance": [
-	        "Syntax", "Canvas", "Microdata", "Browser Limits", "Spriting"
+	        "Syntax", "Canvas", "Microdata"
 	      ],
 	      "width": "twelve"
 	    },
@@ -227,7 +216,7 @@
 	      "skill": "Javascript",
 	      "colorContext": "primary",
 	      "relevance": [
-	        "Modernizer", "jQuery", "Templating Frameworks"
+	        "Modernizer", "jQuery", "MVC"
 	      ],
 	      "width": "twelve"
 	    },
@@ -263,12 +252,43 @@
 	  ]
 	};
 
+	var educationData = {
+		  education: [
+		    {
+		      "institution": "Soka University of America",
+		      "degree": "Liberal Arts Bachelors Degree",
+		      "hasDegree": true,
+		      "major": "Humanities",
+		      "startDate": "2007",
+		      "endDate": "2012"
+		    },
+		    {
+		      "institution": "Shanghai University",
+		      "major": "Chinese",
+		      "startDate": "2012",
+		      "endDate": "2012",
+		      "smallin": true,
+		      "smallout": true,
+		      "rowin": true
+		    },
+		    {
+		      "institution": "Santa Monica College",
+		      "major": "Women Studies",
+		      "startDate": "2007",
+		      "endDate": "2008",
+		      "smallin": true,
+		      "smallout": true,
+		      "rowout": true
+		    }
+		  ]
+		};
+	/* /Model */
+
+	/* Views */
   var experienceTemplate = '{{#experience}} <div class="experience-item">' + 
-	  '<h3 class="title inline">{{position}}</h3> <h3 class="company subheader inline">{{company}}</h3>' + 
+	  '<h3 class="title inline">{{position}}</h3> | <h3 class="company subheader inline">{{company}}</h3>' + 
 	  '<h4 class="dates">{{startDate}} - {{endDate}}</h4>' + 
 	  '<p>{{description}}</p> </div> {{/experience}}'; 
-  var viewExperience = Mustache.to_html(experienceTemplate, experienceData); 
-  $('#experienceArea').html(viewExperience);
 
   var skillsTemplate = '<ul class="">' +
 		'{{#skills}} {{#rowIn}}<div class="row">{{/rowIn}} <li class=" no-list-style {{width}} {{column}} {{skill}}"><h3>{{skill}}</h3>' +
@@ -276,8 +296,29 @@
 		'<ul class="inline-list">' +
 		'{{#relevance}}<li>{{.}}</li>{{/relevance}}' +
 		'</ul></li> {{#rowOut}}</div>{{/rowOut}}</ul>{{/skills}}';
+
+  var educationTemplate = '{{#education}}'+
+		'{{#rowin}}<div class="row">{{/rowin}}'+
+		'{{#smallin}}<div class="six column">{{/smallin}}'+
+		'<h4 class="institution">{{institution}}</h4>'+
+		'<h5 class="subheader">{{degree}}{{#hasDegree}}, {{/hasDegree}}{{major}}, {{startDate}}-{{endDate}}</h5>' +
+		'{{#activities}}<h5 class="subheader">Activities and Societies: '+
+		'{{organization}} {{startDate}}-{{endDate}}</h5>{{/activities}}' +
+		'{{#smallout}}</div>{{/smallout}}'+
+		'{{#rowout}}</div></div>{{/rowout}}'+
+		'{{/education}}';
+		
+  /* /Views */
+  
+  /* Controller */
+  var viewExperience = Mustache.to_html(experienceTemplate, experienceData); 
   var viewSkills = Mustache.to_html(skillsTemplate, skillsData); 
+  var viewEducation = Mustache.to_html(educationTemplate, educationData); 
+
+  $('#experienceArea').html(viewExperience);
   $('#skillsArea').html(viewSkills);
+  $('#educationArea').html(viewEducation);
+  /* /Controller */
 	</script>
   
 </body>

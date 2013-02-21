@@ -381,6 +381,11 @@ span.desktop-highlight {
   }  
 }
 
+.top-nav{
+  position: fixed;
+  z-index: 1000;
+}
+
 .nav,
 .nav a{
     font-family: 'pf_din_text_comp_pro_lightRg',  "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -422,9 +427,28 @@ h5.inline
   display:inline;
 }
 
-h3.company{
-  font-size:1.3em;
+h3{
+  .title{
+    font-size: 1.5em;
+  }
+  .company{
+    font-size:1.3em;
+  }
 }
+
+.dates{
+  font-size:1.4em !important;
+  margin-top:0em !important;
+  opacity: .7 !important;
+}
+
+.experience-item{
+  margin-bottom:2em;
+  p{
+    line-height: 1.7em;
+  }
+}
+
 .education{ 
 
 }

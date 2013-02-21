@@ -133,7 +133,13 @@ span.desktop-highlight {
   width: 100%;
 }
 
-/* line 385, ../sass/_settings.scss */
+/* line 384, ../sass/_settings.scss */
+.top-nav {
+  position: fixed;
+  z-index: 1000;
+}
+
+/* line 390, ../sass/_settings.scss */
 .nav,
 .nav a {
   font-family: "pf_din_text_comp_pro_lightRg", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -142,26 +148,26 @@ span.desktop-highlight {
   text-decoration: none;
 }
 
-/* line 390, ../sass/_settings.scss */
+/* line 395, ../sass/_settings.scss */
 .nav li {
   list-style: none;
   display: inline-block;
   padding-right: .5em;
 }
 
-/* line 391, ../sass/_settings.scss */
+/* line 396, ../sass/_settings.scss */
 blockquote p {
   border-left: 1px dashed #999999;
   padding-left: 1em;
 }
 
-/* line 393, ../sass/_settings.scss */
+/* line 398, ../sass/_settings.scss */
 blockquote {
   margin: 1em 2em;
   padding-left: 1em;
 }
 
-/* line 398, ../sass/_settings.scss */
+/* line 403, ../sass/_settings.scss */
 blockquote p:first-letter,
 blockquote li:first-letter {
   float: left;
@@ -171,25 +177,25 @@ blockquote li:first-letter {
   font-weight: bold;
 }
 
-/* line 404, ../sass/_settings.scss */
+/* line 409, ../sass/_settings.scss */
 blockquote p:first-line {
   font-variant: small-caps;
   font-size: 2em;
 }
 
-/* line 406, ../sass/_settings.scss */
+/* line 411, ../sass/_settings.scss */
 blockquote footer {
   font-size: 2em;
   font-style: italic;
   padding-right: 8.33%;
 }
 
-/* line 412, ../sass/_settings.scss */
+/* line 417, ../sass/_settings.scss */
 .bold-header {
   font-family: 'pf_din_text_comp_probold'!important;
 }
 
-/* line 421, ../sass/_settings.scss */
+/* line 426, ../sass/_settings.scss */
 h1.inline,
 h2.inline,
 h3.inline,
@@ -198,17 +204,37 @@ h5.inline {
   display: inline;
 }
 
-/* line 425, ../sass/_settings.scss */
-h3.company {
+/* line 431, ../sass/_settings.scss */
+h3 .title {
+  font-size: 1.5em;
+}
+/* line 434, ../sass/_settings.scss */
+h3 .company {
   font-size: 1.3em;
 }
 
-/* line 432, ../sass/_settings.scss */
+/* line 439, ../sass/_settings.scss */
+.dates {
+  font-size: 1.4em !important;
+  margin-top: 0em !important;
+  opacity: 0.7 !important;
+}
+
+/* line 445, ../sass/_settings.scss */
+.experience-item {
+  margin-bottom: 2em;
+}
+/* line 447, ../sass/_settings.scss */
+.experience-item p {
+  line-height: 1.7em;
+}
+
+/* line 456, ../sass/_settings.scss */
 .magel {
   position: absolute;
   padding-left: 3em;
 }
-/* line 435, ../sass/_settings.scss */
+/* line 459, ../sass/_settings.scss */
 .magel ul {
   list-style: none;
 }
