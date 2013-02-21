@@ -94,28 +94,7 @@
 	
 	<div id="contact" class="row contactWrapper independent" data-magellan-destination='contact'>
 		
-		<div class="contactForm   column six centered mobile-four">
-			<h2 class="green-topborder">Moshi Moshi.</h2>
-			<form>
-			  <label>Your Name</label>
-			  <input type="text" placeholder="James Brown" />
-			  
-			  <div class="row">
-			  	
-			    <div class="six columns">
-			    	<label>Location</label>
-			      <input type="text" placeholder="Zurich, Switzerland" />
-			    </div>
-			    
-			    <div class="six columns">
-			    	<label>Contact</label>
-			      <input type="text" placeholder="(+##)-###-###-####" />
-			    </div>
-			  </div>
-			  <label>Message</label>
-			  <textarea placeholder="Once upon a time..."></textarea>
-			  <input type="submit" class="large success radius button even twelve" value="Lets Talk." />
-			</form>
+		<div id="contactForm" class="contactForm   column six centered mobile-four">
 		</div>
 	</div>
 
@@ -323,6 +302,22 @@
 		    }
 		  ]
 		};
+
+		var contactFormData ={
+			contactForm: [
+				{
+					"headerMessage": "Moshi Moshi.",
+					"nameLabel": "Your Name",
+					"namePlaceholder": "James Brown",
+					"locationPlaceholder": "Zurich, Switzerland",
+					"locationLabel": "Location",
+					"contactLabel": "Contact",
+					"phonePlaceholder": "(+##)-###-###-####",
+					"textareaPlaceholder": "Once upon a time...",
+					"inputButton": "Lets Talk."
+				}
+			]
+		};
 	/* /Model */
 
 	/* Views */
@@ -351,6 +346,25 @@
 		'{{#rowout}}</div></div>{{/rowout}}'+
 		'{{/education}}';
 		
+	var contactFormTemplate = '{{#contactForm}}<h2 class="green-topborder">{{headerMessage}}</h2>'+
+			'<form>'+
+			 '<label>{{nameLabel}}</label>'+
+			  '<input type="text" placeholder="{{namePlaceholder}}" />'+
+			  '<div class="row">'+
+			    '<div class="six columns">'+
+			    	'<label>{{locationLabel}}</label>'+
+			      '<input type="text" placeholder="{{locationPlaceholder}}" />'+
+			    '</div>'+
+			    '<div class="six columns">'+
+			      '<label>{{contactLabel}}Contact</label>'+
+			      '<input type="text" placeholder="{{phonePlaceholder}}" />'+
+			    '</div>'+
+			  '</div>'+
+			  '<label>{{messageLabel}}</label>'+
+			  '<textarea placeholder="{{textareaPlaceholder}}"></textarea>'+
+			  '<input type="submit" class="large success radius button even twelve" value="{{inputButton}}" />'+
+			'</form>{{/contactForm}}';
+
   /* /Views */
   
   /* Controller */
@@ -358,12 +372,14 @@
   var viewResumeDownload = Mustache.to_html(resumeDownloadTemplate, resumeDownloadData); 
   var viewSkills = Mustache.to_html(skillsTemplate, skillsData); 
   var viewEducation = Mustache.to_html(educationTemplate, educationData); 
+  var viewContactForm = Mustache.to_html(contactFormTemplate, contactFormData); 
 
   $('#experienceArea').html(viewExperience);
   $('#resumeDownloadArea1').html(viewResumeDownload);
   $('#resumeDownloadArea2').html(viewResumeDownload);
   $('#skillsArea').html(viewSkills);
   $('#educationArea').html(viewEducation);
+  $('#contactForm').html(viewContactForm);
   /* /Controller */
 	</script>
   
