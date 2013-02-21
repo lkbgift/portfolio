@@ -14,7 +14,6 @@
 
 	<!-- Included CSS Files -->
 	<link rel="stylesheet" href="stylesheets/app.css">
-
 	<script src="javascripts/foundation/modernizr.foundation.js"></script>
 	<script type="text/javascript" src="javascripts/mustache/mustache.js"></script>
 
@@ -41,36 +40,42 @@
 	        <ul class="right" data-magellan-expedition>
 	          
 	          <li data-magellan-arrival='head' class="divider show-for-medium-and-up"></li>
-					  <li data-magellan-arrival='research'><a>Research</a></li>
+					  <li data-magellan-arrival='research'><a href="#research">Research</a></li>
 					  <li class="divider"></li>
-					  <li data-magellan-arrival='development'><a>Development</a></li>
+					  <li data-magellan-arrival='development'><a href="#development">Development</a></li>
 					  <li class="divider"></li>
-					  <li data-magellan-arrival='design'><a>Design</a></li>
+					  <li data-magellan-arrival='design'><a href="#design">Design</a></li>
 					  <li class="divider"></li>
-  				  <li data-magellan-arrival='resume'><a>Resume</a></li>
+  				  <li data-magellan-arrival='resume'><a href="#resume">Resume</a></li>
   				  <li class="divider"></li>
-  				  <li data-magellan-arrival='contact'><a>Contact Now</a></li>
+  				  <li data-magellan-arrival='contact'><a href="#contact">Contact Now</a></li>
   				  <li class="divider"></li>
 	        </ul>
 	      </section>
 	    </nav>
     </div>	
-    
 	<div class="row" data-magellan-destination='head'>
-		<div class="hero-wrapper twelve">
-			<div class="twelve columns hero">
+		<div class="hero-wrapper twelve independent">
+			<div class="twelve columns hero independent">
 				<h1 class="bold-header red-highlight">Remember Lenny</h1>
 				<h3 class="desktop-highlight subheader">The web developer.</h3>
 			</div>
 		</div>
 	</div>
 	
-	<div class="row" data-magellan-destination='resume'>
+	<div class="row" id="research" data-magellan-destination='research'></div>
+	<div class="row" id="design" data-magellan-destination='design'></div>
+	<div class="row" id="development" data-magellan-destination='development'></div>
+	
+	<div class="row" id="resume" data-magellan-destination='resume'>
+		<hr>
+			<div id="resumeDownloadArea1" class="text-center row">
+			</div>
+		<hr>
 		<div class="experience column eight mobile-four">
 			<h2 class="red-topborder">Experience</h2>
 			<div id="experienceArea"></div>
 		</div>
-		
 		<div class="column four mobile-four">
 			<div class="skills">
 				<h2 class="blue-topborder inline-block">Skills</h2>
@@ -81,12 +86,38 @@
 				<div id="educationArea" class="education panel"></div>
 			</div>
 		</div>
+		<hr>
+			<div id="resumeDownloadArea2" class="text-center row">
+			</div>
+		<hr>
 	</div>
 	
-	<div class="row" data-magellan-destination='research'></div>
-	<div class="row" data-magellan-destination='design'></div>
-	<div class="row" data-magellan-destination='development'></div>
-	<div class="row" data-magellan-destination='contact'></div>
+	<div id="contact" class="row contactWrapper independent" data-magellan-destination='contact'>
+		
+		<div class="contactForm   column six centered mobile-four">
+			<h2 class="green-topborder">Moshi Moshi.</h2>
+			<form>
+			  <label>Your Name</label>
+			  <input type="text" placeholder="James Brown" />
+			  
+			  <div class="row">
+			  	
+			    <div class="six columns">
+			    	<label>Location</label>
+			      <input type="text" placeholder="Zurich, Switzerland" />
+			    </div>
+			    
+			    <div class="six columns">
+			    	<label>Contact</label>
+			      <input type="text" placeholder="(+##)-###-###-####" />
+			    </div>
+			  </div>
+			  <label>Message</label>
+			  <textarea placeholder="Once upon a time..."></textarea>
+			  <input type="submit" class="large success radius button even twelve" value="Lets Talk." />
+			</form>
+		</div>
+	</div>
 
 
        <!--[if lt IE 7]>
@@ -194,6 +225,16 @@
 	    }
 	  ]
 	};
+
+	var resumeDownloadData = {
+		resumeDownload: [
+			{
+				"resumeLocation": "downloads/RememberLenny.pdf",
+				"buttonText": "Download Resume PDF"
+			}
+		]
+	};
+
 	var skillsData = {
 	  skills: [
 	    {
@@ -290,6 +331,8 @@
 	  '<h4 class="dates">{{startDate}} - {{endDate}}</h4>' + 
 	  '<p>{{description}}</p> </div> {{/experience}}'; 
 
+  var resumeDownloadTemplate = '{{#resumeDownload}}<a href="{{resumeLocation}}" class="button round small">{{buttonText}}</a>{{/resumeDownload}}'; 
+
   var skillsTemplate = '<ul class="">' +
 		'{{#skills}} {{#rowIn}}<div class="row">{{/rowIn}} <li class=" no-list-style {{width}} {{column}} {{skill}}"><h3>{{skill}}</h3>' +
 		'<div class="radius progress   {{colorContext}}"><span class="meter"></span></div>' +
@@ -312,10 +355,13 @@
   
   /* Controller */
   var viewExperience = Mustache.to_html(experienceTemplate, experienceData); 
+  var viewResumeDownload = Mustache.to_html(resumeDownloadTemplate, resumeDownloadData); 
   var viewSkills = Mustache.to_html(skillsTemplate, skillsData); 
   var viewEducation = Mustache.to_html(educationTemplate, educationData); 
 
   $('#experienceArea').html(viewExperience);
+  $('#resumeDownloadArea1').html(viewResumeDownload);
+  $('#resumeDownloadArea2').html(viewResumeDownload);
   $('#skillsArea').html(viewSkills);
   $('#educationArea').html(viewEducation);
   /* /Controller */
