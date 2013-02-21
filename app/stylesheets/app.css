@@ -121,31 +121,19 @@ span.desktop-highlight {
   width: 80%;
 }
 /* line 368, ../sass/_settings.scss */
-.skills .PHP .meter {
+.skills .Backend .meter {
   width: 60%;
 }
 /* line 373, ../sass/_settings.scss */
-.skills .Ruby .meter {
-  width: 40%;
-}
-/* line 378, ../sass/_settings.scss */
-.skills .Cli .meter {
-  width: 50%;
-}
-/* line 383, ../sass/_settings.scss */
-.skills .Frontend .meter {
-  width: 70%;
-}
-/* line 388, ../sass/_settings.scss */
-.skills .Analytics .meter {
+.skills .Other .meter {
   width: 80%;
 }
-/* line 393, ../sass/_settings.scss */
+/* line 378, ../sass/_settings.scss */
 .skills .Design .meter {
   width: 100%;
 }
 
-/* line 400, ../sass/_settings.scss */
+/* line 385, ../sass/_settings.scss */
 .nav,
 .nav a {
   font-family: "pf_din_text_comp_pro_lightRg", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -154,26 +142,26 @@ span.desktop-highlight {
   text-decoration: none;
 }
 
-/* line 405, ../sass/_settings.scss */
+/* line 390, ../sass/_settings.scss */
 .nav li {
   list-style: none;
   display: inline-block;
   padding-right: .5em;
 }
 
-/* line 406, ../sass/_settings.scss */
+/* line 391, ../sass/_settings.scss */
 blockquote p {
   border-left: 1px dashed #999999;
   padding-left: 1em;
 }
 
-/* line 408, ../sass/_settings.scss */
+/* line 393, ../sass/_settings.scss */
 blockquote {
   margin: 1em 2em;
   padding-left: 1em;
 }
 
-/* line 413, ../sass/_settings.scss */
+/* line 398, ../sass/_settings.scss */
 blockquote p:first-letter,
 blockquote li:first-letter {
   float: left;
@@ -183,25 +171,25 @@ blockquote li:first-letter {
   font-weight: bold;
 }
 
-/* line 419, ../sass/_settings.scss */
+/* line 404, ../sass/_settings.scss */
 blockquote p:first-line {
   font-variant: small-caps;
   font-size: 2em;
 }
 
-/* line 421, ../sass/_settings.scss */
+/* line 406, ../sass/_settings.scss */
 blockquote footer {
   font-size: 2em;
   font-style: italic;
   padding-right: 8.33%;
 }
 
-/* line 427, ../sass/_settings.scss */
+/* line 412, ../sass/_settings.scss */
 .bold-header {
   font-family: 'pf_din_text_comp_probold'!important;
 }
 
-/* line 436, ../sass/_settings.scss */
+/* line 421, ../sass/_settings.scss */
 h1.inline,
 h2.inline,
 h3.inline,
@@ -210,17 +198,17 @@ h5.inline {
   display: inline;
 }
 
-/* line 440, ../sass/_settings.scss */
+/* line 425, ../sass/_settings.scss */
 h3.company {
   font-size: 1.3em;
 }
 
-/* line 447, ../sass/_settings.scss */
+/* line 432, ../sass/_settings.scss */
 .magel {
   position: absolute;
   padding-left: 3em;
 }
-/* line 450, ../sass/_settings.scss */
+/* line 435, ../sass/_settings.scss */
 .magel ul {
   list-style: none;
 }

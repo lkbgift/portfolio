@@ -82,7 +82,6 @@
 				<h2 class="blue-topborder inline-block">Skills</h2>
 				<div class="skills panel">
 					<div id="skillsArea"></div>
-					<hr>
 				</div>
 			</div>
 			<div class="education">
@@ -234,20 +233,24 @@
 	    },
 	    {
 	      "skill": "Backend",
-	      "colorContext": "primary",
+	      "colorContext": "secondary",
 	      "relevance": [
 					"PHP",
 					"Ruby",
 	      ],
-	      "width": "six"
+	      "width": "six",
+	      "column": "column",
+	      "rowIn": "true"
 	    },
 	    {
 	      "skill": "Other",
 	      "colorContext": "secondary",
 	      "relevance": [
-					"Git", "CLI", "Omniture", "Google Analytics"
+					"Git", "CLI"
 	      ],
-	      "width": "six"
+	      "width": "six",
+	      "column": "column",
+	      "rowOut": "true"
 	    },
 	    {
 	      "skill": "Design",
@@ -255,7 +258,7 @@
 	      "relevance": [
 	        "Photoshop", "Illustrator", "InDesign"
 	      ],
-	      "width": "six"
+	      "width": "twelve"
 	    }
 	  ]
 	};
@@ -267,12 +270,12 @@
   var viewExperience = Mustache.to_html(experienceTemplate, experienceData); 
   $('#experienceArea').html(viewExperience);
 
-  var skillsTemplate = '{{#skills}} <ul class=" no-list-style">' +
-		'<li class="{{skill}} column"><h3>{{skill}}</h3>' +
-		'<div class="radius progress column {{colorContext}} {{width}}"><span class="meter"></span></div>' +
+  var skillsTemplate = '<ul class="">' +
+		'{{#skills}} {{#rowIn}}<div class="row">{{/rowIn}} <li class=" no-list-style {{width}} {{column}} {{skill}}"><h3>{{skill}}</h3>' +
+		'<div class="radius progress   {{colorContext}}"><span class="meter"></span></div>' +
 		'<ul class="inline-list">' +
 		'{{#relevance}}<li>{{.}}</li>{{/relevance}}' +
-		'</ul></li></ul>{{/skills}}';
+		'</ul></li> {{#rowOut}}</div>{{/rowOut}}</ul>{{/skills}}';
   var viewSkills = Mustache.to_html(skillsTemplate, skillsData); 
   $('#skillsArea').html(viewSkills);
 	</script>
