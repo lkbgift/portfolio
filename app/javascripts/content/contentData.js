@@ -1,46 +1,5 @@
-;(function ($, window, undefined) {
-  'use strict';
-
-  var $doc = $(document),
-      Modernizr = window.Modernizr;
-
-  $(document).ready(function() {
-    $.fn.foundationButtons          ? $doc.foundationButtons() : null;
-    $.fn.foundationNavigation       ? $doc.foundationNavigation() : null;
-    $.fn.foundationTopBar           ? $doc.foundationTopBar() : null;
-    $.fn.foundationCustomForms      ? $doc.foundationCustomForms() : null;
-    $.fn.foundationMediaQueryViewer ? $doc.foundationMediaQueryViewer() : null;
-    $.fn.foundationTabs             ? $doc.foundationTabs({callback : $.foundation.customForms.appendCustomMarkup}) : null;
-    $.fn.foundationTooltips         ? $doc.foundationTooltips() : null;
-    $.fn.foundationMagellan         ? $doc.foundationMagellan() : null;
-    $.fn.foundationClearing         ? $doc.foundationClearing() : null;
-
-    $.fn.placeholder                ? $('input, textarea').placeholder() : null;
-  });
-
-  // UNCOMMENT THE LINE YOU WANT BELOW IF YOU WANT IE8 SUPPORT AND ARE USING .block-grids
-  // $('.block-grid.two-up>li:nth-child(2n+1)').css({clear: 'both'});
-  // $('.block-grid.three-up>li:nth-child(3n+1)').css({clear: 'both'});
-  // $('.block-grid.four-up>li:nth-child(4n+1)').css({clear: 'both'});
-  // $('.block-grid.five-up>li:nth-child(5n+1)').css({clear: 'both'});
-
-  // Hide address bar on mobile devices (except if #hash present, so we don't mess up deep linking).
-  if (Modernizr.touch && !window.location.hash) {
-    $(window).load(function () {
-      setTimeout(function () {
-        // At load, if user hasn't scrolled more than 20px or so...
-  			if( $(window).scrollTop() < 20 ) {
-          window.scrollTo(0, 1);
-        }
-      }, 0);
-    });
-  }
-
-})(jQuery, this);
-
-
-  var data = {   
-    experience: [
+(function (){
+  var experienceData = { experience: [
       {
         "position": "UX Developer",
         "company": "Converse Asia Pacific",
@@ -84,8 +43,8 @@
         "description": "Hand coded email newsletters using table based layouts. Improved companies branding through email contact through custom 'Kenas' styled layouts. Implemented a email deployment schedule which maximized delivery times based on recipient's timezone. Increased first-day click through rates from <7% to >16%."
       }
     ]
-  },
-  {
+  };
+  var skillsData = {
     skills: [
       {
         "skill": "HTML5",
@@ -143,35 +102,6 @@
     ]
   };
 
-  var template = {
-    experience: function(){ 
-    '{{#experience}} <div class="experience-item">' + 
-    '<h3 class="title inline">{{position}}</h3> <h3 class="company subheader inline">{{company}}</h3>' + 
-    '<h4 class="dates">{{startDate}} - {{endDate}}</h4>' + 
-    '<p>{{description}}</p> </div> {{/experience}}'; 
-    },
-    skills: function() {
-    '<ul class="">' +
-    '{{#skills}} {{#rowIn}}<div class="row">{{/rowIn}} <li class=" no-list-style {{width}} {{column}} {{skill}}"><h3>{{skill}}</h3>' +
-    '<div class="radius progress   {{colorContext}}"><span class="meter"></span></div>' +
-    '<ul class="inline-list">' +
-    '{{#relevance}}<li>{{.}}</li>{{/relevance}}' +
-    '</ul></li> {{#rowOut}}</div>{{/rowOut}}</ul>{{/skills}}';
-    }
-  };
+  return this;
 
-  jQuery(function () {
-    template.experience();
-    template.skills();
-  });
-
-  var views = {
-
-  }
-  var viewExperience = Mustache.to_html(experienceTemplate, data); 
-  $('#experienceArea').html(viewExperience);
-
-  var viewSkills = Mustache.to_html(skillsTemplate, data); 
-  $('#skillsArea').html(viewSkills);
-
-
+})();
