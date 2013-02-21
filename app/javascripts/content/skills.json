@@ -1,0 +1,81 @@
+{
+  "skills": [
+    {
+      "skill": "HTML5",
+      "relevance": [
+        {
+          "item" : "Syntax",
+          "item" : "Canvas",
+          "item" : "Microdata",
+          "item" : "Browser Limits",
+          "item" : "Spriting"
+        }
+      ],
+      "width": "twelve"
+    }
+    {
+      "skill": "CSS3",
+      "relevance": [
+        {
+          "item" : "Pre-processors",
+          "item" : "SMACSS / OOCSS",
+          "item" : "Responsive"
+        }
+      ],
+      "width": "twelve"
+    }
+    {
+      "skill": "Javascript",
+      "relevance": [
+        {
+          "item" : "Modernizer",
+          "item" : "jQuery",
+          "item" : "Templating Frameworks"
+        }
+      ],
+      "width": "twelve"
+    }
+    {
+      "skill": "PHP",
+      "relevance": [
+        {
+          "item" : "WordPress"
+        }
+      ],
+      "width": "six"
+    }
+    {
+      "skill": "Ruby",
+      "relevance": [
+        {
+          "item" : "Rails"
+        }
+      ],
+      "width": "six"
+    }
+    {
+      "skill": "Other",
+      "relevance": [
+        {
+          "item" : "Git",
+          "item" : "CLI",
+          "item" : "Omniture",
+          "item" : "Google Analytics"
+        }
+      ],
+      "width": "six"
+    }
+    {
+      "skill": "Design",
+      "relevance": [
+        {
+          "item" : "Photoshop",
+          "item" : "Illustrator",
+          "item" : "InDesign"
+        }
+      ],
+      "width": "six"
+    }
+  ]
+}
+  

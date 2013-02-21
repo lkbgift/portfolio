@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Lenny B</title>
+
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="stylesheets/app.css">
+
+	<script src="javascripts/foundation/modernizr.foundation.js"></script>
+	<script type="text/javascript" src="javascripts/mustache/mustache.js"></script>
+
+</head>
+<body>
+
+		<div class="contain-to-grid sticky">	
+	    <nav class="top-bar ">
+	      <ul>
+	        <!-- Title Area -->
+	        <li class="name">
+	          <h1>
+	            <a href="#">
+	              Remember Lenny
+	            </a>
+	          </h1>
+	        </li>
+	         <li class="toggle-topbar"><a href="#"></a></li>
+	      </ul>
+
+	      <section>
+
+	        <!-- Right Nav Section -->
+	        <ul class="right" data-magellan-expedition>
+	          
+	          <li class=" divider show-for-medium-and-up"></li>
+	          <li class="divider"></li>
+  				  <li data-magellan-arrival='resume'><a>Resume</a></li>
+  				  <li class="divider"></li>
+					  <li data-magellan-arrival='research'><a>Research</a></li>
+					  <li class="divider"></li>
+					  <li data-magellan-arrival='development'><a>Development</a></li>
+					  <li class="divider"></li>
+					  <li data-magellan-arrival='design'><a>Design</a></li>
+					  <li class="divider"></li>
+		        
+	        </ul>
+	        
+	      </section>
+	    </nav>
+    </div>	
+    
+    
+    
+    
+	<div class="row">
+		<div class="hero-wrapper twelve">
+			<div class="twelve columns hero">
+				<h1 class="bold-header red-highlight">Remember Lenny</h1>
+				<h3 class="desktop-highlight subheader">The web developer.</h3>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<div class="row" data-magellan-destination='resume'>
+		<div class="experience column eight mobile-four">
+			<h2 class="red-topborder">Experience</h2>
+			<div id="experienceArea"></div>
+		</div>
+		
+		<div class="column four mobile-four">
+			<div class="skills">
+				<h2 class="blue-topborder inline-block">Skills</h2>
+				<div class="skills panel">
+					<div id="skillsArea"></div>
+					<hr>
+				</div>
+			</div>
+			<div class="education">
+				<h2 class="blue-topborder inline-block">Education</h2>
+				<div class="education panel">
+					<h3 class="institution">Soka University of America</h3>
+					<h5 class="subheader">Bachelors Liberal Arts Degree, Humanities Concentration, 2007 - 2012</h5>
+	<h5 class="subheader">Activities and Societies: Executive Council 2010-2011</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row" data-magellan-destination='research'></div>
+	<div class="row" data-magellan-destination='design'></div>
+	<div class="row" data-magellan-destination='development'></div>
+	<div class="row" data-magellan-destination='contact'></div>
+
+
+       <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+   /*         
+   					var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+*/
+        </script>
+
+	<!-- Included JS Files (Uncompressed) -->
+	<script src="javascripts/foundation/jquery.js"></script>
+	
+	<script src="javascripts/foundation/jquery.cookie.js"></script>
+	
+	<script src="javascripts/foundation/jquery.event.move.js"></script>
+	
+	<script src="javascripts/foundation/jquery.event.swipe.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.accordion.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.alerts.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.buttons.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.clearing.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.forms.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.joyride.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.magellan.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.mediaQueryToggle.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.navigation.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.orbit.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.reveal.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.tabs.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.tooltips.js"></script>
+	
+	<script src="javascripts/foundation/jquery.foundation.topbar.js"></script>
+	
+	<script src="javascripts/foundation/jquery.placeholder.js"></script>
+	
+
+  <!-- Application Javascript, safe to override -->
+  <script src="javascripts/foundation/app.js"></script>
+
+  <script type="text/javascript">
+
+	var experienceData = { experience: [
+	  	{
+	      "position": "UX Developer",
+	      "company": "Converse Asia Pacific",
+	      "startDate": "September 2012",
+	      "endDate": "December 2012",
+	      "description": "Responsible for User Experience development for Converse.com.cn. Managed feature improvements and performance optimization. Taught Chinese web development team to write semantic, best-practice, and current build process through Grunt. Increased the website's speed by >60% through front-end optimizations (image sprites, file concatenation, CDN and server optimizations)."
+	    },
+	    {
+	      "position": "Front-end developer",
+	      "company": "iTalki",
+	      "startDate": "August 2012",
+	      "endDate": "December 2012",
+	      "description": "Prototyped and coded marketing pages using scalable modular CSS. Produced screencasts, iPhone application promotional video, and website tours using Adobe Premiere and Reflections. Taught existing frontend developer how to write CSS and JS through object-oriented patterns. Improved marketing product production time from over 1 week to less than 1 day."
+	    },
+	    {
+	      "position": "Web Developer",
+	      "company": "Infinite Twist",
+	      "startDate": "July 2012",
+	      "endDate": "December 2012",
+	      "description": "Used the Foundation front-end framework from Zurb to prototype the website. Using prototype, translated the website into a e-commerce WordPress theme. Final product allows company to have international shipping zones for global clientele."
+	    },
+	    {
+	      "position": "E-commerce Wordpress Developer",
+	      "company": "Flying Turtle Coffee",
+	      "startDate": "June 2012",
+	      "endDate": "December 2012",
+	      "description": "Developed a responsive multilingual e-commerce WordPress child-theme using WooCommerce. Contributed modular segments from the site to the WooCommerce open-source community."
+	    },
+	    {
+	      "position": "Web Developer",
+	      "company": "Wealthy Sources",
+	      "startDate": "August 2012",
+	      "endDate": "November 2012",
+	      "description": "Produced WealthySources.com based on GoogleVentures.com website. Established email collection systems with Mailchimp and site analytic collection with Google Analytics. Trained in-house Wealthy Sources staff on WordPress management."
+	    },
+	    {
+	      "position": "Email Marketing and Graphic Designer",
+	      "company": 'Kenas Furniture "member of the Li & Fung Group"',
+	      "startDate": "March 2012",
+	      "endDate": "August 2012",
+	      "description": "Hand coded email newsletters using table based layouts. Improved companies branding through email contact through custom 'Kenas' styled layouts. Implemented a email deployment schedule which maximized delivery times based on recipient's timezone. Increased first-day click through rates from <7% to >16%."
+	    }
+	  ]
+	};
+	var skillsData = {
+	  skills: [
+	    {
+	      "skill": "HTML5",
+	      "colorContext": "success",
+	      "relevance": [
+	        "Syntax", "Canvas", "Microdata", "Browser Limits", "Spriting"
+	      ],
+	      "width": "twelve"
+	    },
+	    {
+	      "skill": "CSS3",
+	      "colorContext": "success",
+	      "relevance": [
+	        "Pre-processors", "SMACSS / OOCSS", "Responsive"
+	      ],
+	      "width": "twelve"
+	    },
+	    {
+	      "skill": "Javascript",
+	      "colorContext": "primary",
+	      "relevance": [
+	        "Modernizer", "jQuery", "Templating Frameworks"
+	      ],
+	      "width": "twelve"
+	    },
+	    {
+	      "skill": "Backend",
+	      "colorContext": "primary",
+	      "relevance": [
+					"PHP",
+					"Ruby",
+	      ],
+	      "width": "six"
+	    },
+	    {
+	      "skill": "Other",
+	      "colorContext": "secondary",
+	      "relevance": [
+					"Git", "CLI", "Omniture", "Google Analytics"
+	      ],
+	      "width": "six"
+	    },
+	    {
+	      "skill": "Design",
+	      "colorContext": "success",
+	      "relevance": [
+	        "Photoshop", "Illustrator", "InDesign"
+	      ],
+	      "width": "six"
+	    }
+	  ]
+	};
+
+  var experienceTemplate = '{{#experience}} <div class="experience-item">' + 
+	  '<h3 class="title inline">{{position}}</h3> <h3 class="company subheader inline">{{company}}</h3>' + 
+	  '<h4 class="dates">{{startDate}} - {{endDate}}</h4>' + 
+	  '<p>{{description}}</p> </div> {{/experience}}'; 
+  var viewExperience = Mustache.to_html(experienceTemplate, experienceData); 
+  $('#experienceArea').html(viewExperience);
+
+  var skillsTemplate = '{{#skills}} <ul class=" no-list-style">' +
+		'<li class="{{skill}} column"><h3>{{skill}}</h3>' +
+		'<div class="radius progress column {{colorContext}} {{width}}"><span class="meter"></span></div>' +
+		'<ul class="inline-list">' +
+		'{{#relevance}}<li>{{.}}</li>{{/relevance}}' +
+		'</ul></li></ul>{{/skills}}';
+  var viewSkills = Mustache.to_html(skillsTemplate, skillsData); 
+  $('#skillsArea').html(viewSkills);
+	</script>
+  
+</body>
+</html>

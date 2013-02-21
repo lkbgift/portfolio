@@ -1,0 +1,30 @@
+{
+  "education": [
+    {
+      "institution": "Shanghai University",
+      "major": "Chinese",
+      "startDate": "2012",
+      "endDate": "2012"
+    }
+    {
+      "institution": "Soka University of America",
+      "degree": "Liberal Arts Bachelors Degree",
+      "major": "Humanities",
+      "startDate": "2007",
+      "endDate": "2012",
+      "activities": [
+        {
+          "organization": "Executive Council",
+          "startDate": "2010",
+          "endDate": "2011"
+        }
+      ]
+    }
+    {
+      "institution": "Santa Monica College",
+      "major": "Women Studies",
+      "startDate": "2007",
+      "endDate": "2008"
+    }
+  ]
+}
