@@ -68,10 +68,8 @@
 	<div class="row" id="development" data-magellan-destination='development'></div>
 	
 	<div class="row" id="resume" data-magellan-destination='resume'>
-		<div class="four column centered">
-			<hr>
+		<div class="twelve column centered">
 			<div id="resumeDownloadArea1" class="text-center"></div>
-			<hr>
 		</div>
 		<div class="experience column eight mobile-four">
 			<h2 class="red-topborder">Experience</h2>
@@ -88,10 +86,8 @@
 			</div>
 		</div>
 		
-			<div class="four column centered">
-				<hr>
+			<div class="twelve column centered">
 				<div id="resumeDownloadArea2" class="text-center"></div>
-				<hr>
 			</div>
 		
 	</div>
@@ -297,7 +293,7 @@
 		    },
 		    {
 		      "institution": "Santa Monica College",
-		      "major": "Women Studies",
+		      "major": "Women's Studies",
 		      "startDate": "2007",
 		      "endDate": "2008",
 		      "smallin": true,
@@ -330,7 +326,7 @@
 	  '<h4 class="dates">{{startDate}} - {{endDate}}</h4>' + 
 	  '<p>{{description}}</p> </div> {{/experience}}'; 
 
-  var resumeDownloadTemplate = '{{#resumeDownload}}<a href="{{resumeLocation}}" class="button round small">{{buttonText}}</a>{{/resumeDownload}}'; 
+  var resumeDownloadTemplate = '<hr>{{#resumeDownload}}<a href="{{resumeLocation}}" class="button round small">{{buttonText}}</a>{{/resumeDownload}}<hr>'; 
 
   var skillsTemplate = '<ul class="">' +
 		'{{#skills}} {{#rowIn}}<div class="row">{{/rowIn}} <li class=" no-list-style {{width}} {{column}} {{skill}}"><h3>{{skill}}</h3>' +
