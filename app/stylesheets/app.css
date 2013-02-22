@@ -37,7 +37,20 @@ h1, h2 {
   text-transform: uppercase;
 }
 
-/* line 291, ../sass/_settings.scss */
+/* line 290, ../sass/_settings.scss */
+.grid99 {
+  width: 100%;
+}
+/* line 292, ../sass/_settings.scss */
+.grid99 .grid31 {
+  width: 100%;
+}
+/* line 294, ../sass/_settings.scss */
+.grid99 .grid31 img {
+  width: 30%;
+}
+
+/* line 300, ../sass/_settings.scss */
 .rotate45 {
   /* Safari */
   -webkit-transform: rotate(-90deg);
@@ -51,14 +64,14 @@ h1, h2 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=4);
 }
 
-/* line 309, ../sass/_settings.scss */
+/* line 318, ../sass/_settings.scss */
 .red-highlight {
   background: #e33100;
   background: rgba(227, 49, 0, 0.8);
   color: white;
 }
 
-/* line 315, ../sass/_settings.scss */
+/* line 324, ../sass/_settings.scss */
 span.desktop-highlight {
   background: #181818;
   background: rgba(24, 24, 24, 0.75);
@@ -67,34 +80,34 @@ span.desktop-highlight {
   padding: 3px 15px;
 }
 
-/* line 322, ../sass/_settings.scss */
+/* line 331, ../sass/_settings.scss */
 .blue-topborder {
   border-top: 0.3em solid;
   border-color: #4981f8;
   border-color: rgba(73, 129, 248, 0.8);
 }
 
-/* line 327, ../sass/_settings.scss */
+/* line 336, ../sass/_settings.scss */
 .red-topborder {
   border-top: 0.3em solid;
   border-color: #e33100;
   border-color: rgba(227, 49, 0, 0.8);
 }
 
-/* line 332, ../sass/_settings.scss */
+/* line 341, ../sass/_settings.scss */
 .green-topborder {
   border-top: 0.3em solid;
   border-color: #5ae78e;
   border-color: rgba(90, 231, 142, 0.8);
 }
 
-/* line 337, ../sass/_settings.scss */
+/* line 346, ../sass/_settings.scss */
 .independent {
   margin-top: 10% !important;
   margin-bottom: 10% !important;
 }
 
-/* line 341, ../sass/_settings.scss */
+/* line 350, ../sass/_settings.scss */
 .hero {
   -webkit-user-select: none;
   /* Chrome all / Safari all */
@@ -106,7 +119,7 @@ span.desktop-highlight {
   -o-user-select: none;
   user-select: none;
 }
-/* line 349, ../sass/_settings.scss */
+/* line 358, ../sass/_settings.scss */
 .hero h1 {
   margin-left: -.2em;
   font-size: 7em;
@@ -115,7 +128,7 @@ span.desktop-highlight {
   line-height: 1em;
   display: inline-block;
 }
-/* line 357, ../sass/_settings.scss */
+/* line 366, ../sass/_settings.scss */
 .hero h3 {
   font-size: 4em;
   margin-top: 0em;
@@ -124,47 +137,47 @@ span.desktop-highlight {
   border-color: rgba(111, 111, 111, 0.8);
 }
 
-/* line 367, ../sass/_settings.scss */
+/* line 376, ../sass/_settings.scss */
 .experience h2 {
   display: inline-block;
 }
 
-/* line 374, ../sass/_settings.scss */
+/* line 383, ../sass/_settings.scss */
 .skills .HTML5 .meter {
   width: 90%;
 }
-/* line 379, ../sass/_settings.scss */
+/* line 388, ../sass/_settings.scss */
 .skills .CSS3 .meter {
   width: 100%;
 }
-/* line 384, ../sass/_settings.scss */
+/* line 393, ../sass/_settings.scss */
 .skills .Javascript .meter {
   width: 70%;
 }
-/* line 389, ../sass/_settings.scss */
+/* line 398, ../sass/_settings.scss */
 .skills .Git .meter {
   width: 80%;
 }
-/* line 394, ../sass/_settings.scss */
+/* line 403, ../sass/_settings.scss */
 .skills .Backend .meter {
   width: 60%;
 }
-/* line 399, ../sass/_settings.scss */
+/* line 408, ../sass/_settings.scss */
 .skills .Other .meter {
   width: 80%;
 }
-/* line 404, ../sass/_settings.scss */
+/* line 413, ../sass/_settings.scss */
 .skills .Design .meter {
   width: 100%;
 }
 
-/* line 410, ../sass/_settings.scss */
+/* line 419, ../sass/_settings.scss */
 .top-nav {
   position: fixed;
   z-index: 1000;
 }
 
-/* line 416, ../sass/_settings.scss */
+/* line 425, ../sass/_settings.scss */
 .nav,
 .nav a {
   font-family: "pf_din_text_comp_pro_lightRg", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -173,26 +186,26 @@ span.desktop-highlight {
   text-decoration: none;
 }
 
-/* line 421, ../sass/_settings.scss */
+/* line 430, ../sass/_settings.scss */
 .nav li {
   list-style: none;
   display: inline-block;
   padding-right: .5em;
 }
 
-/* line 422, ../sass/_settings.scss */
+/* line 431, ../sass/_settings.scss */
 blockquote p {
   border-left: 1px dashed #999999;
   padding-left: 1em;
 }
 
-/* line 424, ../sass/_settings.scss */
+/* line 433, ../sass/_settings.scss */
 blockquote {
   margin: 1em 2em;
   padding-left: 1em;
 }
 
-/* line 429, ../sass/_settings.scss */
+/* line 438, ../sass/_settings.scss */
 blockquote p:first-letter,
 blockquote li:first-letter {
   float: left;
@@ -202,25 +215,25 @@ blockquote li:first-letter {
   font-weight: bold;
 }
 
-/* line 435, ../sass/_settings.scss */
+/* line 444, ../sass/_settings.scss */
 blockquote p:first-line {
   font-variant: small-caps;
   font-size: 2em;
 }
 
-/* line 437, ../sass/_settings.scss */
+/* line 446, ../sass/_settings.scss */
 blockquote footer {
   font-size: 2em;
   font-style: italic;
   padding-right: 8.33%;
 }
 
-/* line 443, ../sass/_settings.scss */
+/* line 452, ../sass/_settings.scss */
 .bold-header {
   font-family: 'pf_din_text_comp_probold'!important;
 }
 
-/* line 452, ../sass/_settings.scss */
+/* line 461, ../sass/_settings.scss */
 h1.inline,
 h2.inline,
 h3.inline,
@@ -229,39 +242,76 @@ h5.inline {
   display: inline;
 }
 
-/* line 457, ../sass/_settings.scss */
+/* line 466, ../sass/_settings.scss */
 h3 .title {
   font-size: 1.5em;
 }
-/* line 460, ../sass/_settings.scss */
+/* line 469, ../sass/_settings.scss */
 h3 .company {
   font-size: 1.3em;
 }
 
-/* line 465, ../sass/_settings.scss */
+/* line 474, ../sass/_settings.scss */
 .dates {
   font-size: 1.4em !important;
   margin-top: 0em !important;
   opacity: 0.7 !important;
 }
 
-/* line 471, ../sass/_settings.scss */
+/* line 480, ../sass/_settings.scss */
 .experience-item {
   margin-bottom: 2em;
 }
-/* line 473, ../sass/_settings.scss */
+/* line 482, ../sass/_settings.scss */
 .experience-item p {
   line-height: 1.7em;
 }
 
-/* line 482, ../sass/_settings.scss */
+/* line 491, ../sass/_settings.scss */
 .magel {
   position: absolute;
   padding-left: 3em;
 }
-/* line 485, ../sass/_settings.scss */
+/* line 494, ../sass/_settings.scss */
 .magel ul {
   list-style: none;
+}
+
+/* line 498, ../sass/_settings.scss */
+.justTheTip {
+  display: inline-block;
+  margin-left: -3px;
+}
+
+/* line 502, ../sass/_settings.scss */
+div.arrow-right {
+  width: 0;
+  height: 0;
+  border-left: 80px solid #e33100;
+  border-color: #E33100;
+  border-color: rgba(227, 49, 0, 0.8);
+  border-top: 80px solid transparent;
+  border-bottom: 80px solid transparent;
+  margin-bottom: -45px;
+}
+
+/* line 512, ../sass/_settings.scss */
+.lamb {
+  width: 120%;
+}
+
+/* line 515, ../sass/_settings.scss */
+#clients {
+  max-width: 100%;
+  overflow: scroll;
+}
+/* line 518, ../sass/_settings.scss */
+#clients #client-wrap {
+  width: 15000px;
+}
+/* line 520, ../sass/_settings.scss */
+#clients #client-wrap td {
+  width: 100%;
 }
 
 /* Requires: normalize.css */

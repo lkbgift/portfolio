@@ -41,17 +41,56 @@
       </section>
     </nav>
   </div>	
-	<div class="row" data-magellan-destination='head'>
-		<div class="hero-wrapper twelve independent">
-			<div class="twelve columns hero independent">
-				<h1 class="bold-header red-highlight">Remember Lenny</h1>
-				<h3 class="desktop-highlight subheader">The web developer.</h3>
+	<div class="" id="clients" data-magellan-destination='clients'>
+		<div id="client-wrap">
+			<div class="client">
+				<div class="hero-wrapper twelve independent">
+					<div class=" columns hero independent">
+						<div class="lamb">
+							<h1 class="bold-header red-highlight">Remember Lenny </h1>
+							<span class="justTheTip">
+								<div class="arrow-right"></div>
+							</span>
+						</div>
+					</div>
+				</div>
 			</div>
+			<div class="client converse"> 
+				<div class="messaging">
+					<h2>UX Development</h2>
+					<h3>Past Clients</h3>
+					<ul>
+						<li>Converse Asia Pacific</li>
+						<li>iTalki</li>
+					</ul>
+					<p></p>
+				</div>
+				<div class="grid99">
+					<div class="grid31">
+						<img src="images/600.png" alt="">
+						<img src="images/600.png" alt="">
+						<img src="images/600.png" alt="">
+					</div>
+					<div class="grid31">
+						<img src="images/600.png" alt="">
+						<img src="images/600.png" alt="">
+						<img src="images/600.png" alt="">
+					</div>
+					<div class="grid31">
+						<img src="images/600.png" alt="">
+						<img src="images/600.png" alt="">
+						<img src="images/600.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="client responsive"> 
+				<div class="windowCase">
+					<img src="images/completeWindowTrans.png" alt="">
+				</div>
+			</div>
+			<div class="client"><img src="images/600.png" alt=""> </div>
+			<div class="client"><img src="images/600.png" alt=""> </div>
 		</div>
-	</div>
-	
-	<div class="row" id="clients" data-magellan-destination='clients'>
-		
 	</div>
 
 	<div class="row" id="resume" data-magellan-destination='resume'>
@@ -291,6 +330,15 @@
   $('#skillsArea').html(viewSkills);
   $('#educationArea').html(viewEducation);
   $('#contactForm').html(viewContactForm);
+
+	$(function(){
+		$("#client-wrap").wrapInner("<table cellspacing='30'><tr>");
+		$(".client").wrap("<td></td>");
+		$("body").mousewheel(function(event, delta) {
+			this.scrollLeft -= (delta * 30);
+			event.preventDefault();
+		});   
+	});
 	</script>
 </body>
 </html>

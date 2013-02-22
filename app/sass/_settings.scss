@@ -287,6 +287,15 @@ h1, h2{
   text-transform: uppercase;
 }
 
+.grid99{
+  width: 100%;
+  .grid31{
+    width: 100%;
+    img{
+      width: 30%;
+    }
+  }   
+}
 
 .rotate45{
   /* Safari */
@@ -484,5 +493,32 @@ h3{
   padding-left: 3em;
   ul{
     list-style: none;
+  }
+}
+.justTheTip{
+  display: inline-block;
+  margin-left: -3px;
+}
+div.arrow-right {
+  width: 0;
+  height: 0;
+  border-left: 80px solid #E33100;
+  border-color: #E33100;
+  border-color: rgba(227, 49, 0, 0.8);
+  border-top: 80px solid transparent;
+  border-bottom: 80px solid transparent;
+  margin-bottom: -45px;
+}
+.lamb{
+  width:120%;
+}
+#clients{
+  max-width: 100%;
+  overflow:scroll;
+  #client-wrap{
+    width: 15000px;
+    td{
+      width: 100%;
+    }
   }
 }
