@@ -420,7 +420,7 @@ aside p {
 /* line 15, ../../../../.rvm/gems/ruby-1.9.3-p385/gems/zurb-foundation-3.2.5/scss/foundation/common/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "pf_din_text_comp_pro_lightRg", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: normal;
   font-style: normal;
   color: #222222;
   text-rendering: optimizeLegibility;
@@ -2593,7 +2593,7 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
 }
 /* line 39, ../../../../.rvm/gems/ruby-1.9.3-p385/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_topbar.scss */
 .top-bar > ul .name h1 a {
-  font-weight: bold;
+  font-weight: normal;
   padding: 0 22.5px;
   font-size: 17px !important;
 }
@@ -2632,7 +2632,7 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
   color: white;
   display: block;
   font-size: 13px;
-  font-weight: bold;
+  font-weight: normal;
   height: 45px;
   line-height: 45px;
   padding: 0 15px;
@@ -2852,7 +2852,7 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
 .top-bar ul > li.has-dropdown .dropdown li label {
   color: #6f6f6f;
   font-size: 10px;
-  font-weight: bold;
+  font-weight: normal;
   margin: 0;
   padding-left: 15px;
   text-transform: uppercase;
@@ -2945,7 +2945,7 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
 .lt-ie9 .top-bar ul li a {
   color: white;
   display: block;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 13px;
   height: 45px;
   line-height: 45px;
@@ -6195,7 +6195,7 @@ table.hide-for-medium {
     padding-top: 8px;
     padding-bottom: 8px;
     font-size: 23px;
-    font-weight: bold;
+    font-weight: normal;
   }
   /* line 422, ../../../../.rvm/gems/ruby-1.9.3-p385/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_mqueries.scss */
   .top-bar ul > li.has-dropdown .dropdown li {

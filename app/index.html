@@ -1,59 +1,46 @@
 <!DOCTYPE html>
-
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-
 <head>
 	<meta charset="utf-8" />
-
-	<!-- Set the viewport width to device width for mobile -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-	<title>Lenny B</title>
-
-	<!-- Included CSS Files -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Remember Lenny B.</title>
 	<link rel="stylesheet" href="stylesheets/app.css">
 	<script src="javascripts/foundation/modernizr.foundation.js"></script>
 	<script type="text/javascript" src="javascripts/mustache/mustache.js"></script>
-
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-38713891-1']);
+	  _gaq.push(['_setDomainName', 'rememberlenny.com']);
+	  _gaq.push(['_setAllowLinker', true]);
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
 </head>
 <body>
-
-		<div class="contain-to-grid top-nav">	
-	    <nav class="top-bar ">
-	      <ul>
-	        <!-- Title Area -->
-	        <li class="name">
-	          <h1>
-	            <a href="#">
-	              Remember Lenny
-	            </a>
-	          </h1>
-	        </li>
-	         <li class="toggle-topbar"><a href="#"></a></li>
-	      </ul>
-
-	      <section>
-
-	        <!-- Right Nav Section -->
-	        <ul class="right" data-magellan-expedition>
-	          
-	          <li data-magellan-arrival='head' class="divider show-for-medium-and-up"></li>
-					  <li data-magellan-arrival='research'><a href="#research">Research</a></li>
-					  <li class="divider"></li>
-					  <li data-magellan-arrival='development'><a href="#development">Development</a></li>
-					  <li class="divider"></li>
-					  <li data-magellan-arrival='design'><a href="#design">Design</a></li>
-					  <li class="divider"></li>
-  				  <li data-magellan-arrival='resume'><a href="#resume">Resume</a></li>
-  				  <li class="divider"></li>
-  				  <li data-magellan-arrival='contact'><a href="#contact">Contact Now</a></li>
-  				  <li class="divider"></li>
-	        </ul>
-	      </section>
-	    </nav>
-    </div>	
+	<div class="contain-to-grid top-nav">	
+    <nav class="top-bar ">
+      <ul>
+        <li class="name"><h1><a href="#">Remember Lenny</a></h1></li>
+				<li class="toggle-topbar"><a href="#"></a></li>
+      </ul>
+      <section>
+        <ul class="right" data-magellan-expedition>
+          <li data-magellan-arrival='head' class="divider show-for-medium-and-up"></li>
+				  <li data-magellan-arrival='clients'><a href="#clients">Clients</a></li>
+				  <li class="divider"></li>
+				  <li data-magellan-arrival='resume'><a href="#resume">Resume</a></li>
+				  <li class="divider"></li>
+				  <li data-magellan-arrival='contact'><a href="#contact">Contact Now</a></li>
+				  <li class="divider"></li>
+        </ul>
+      </section>
+    </nav>
+  </div>	
 	<div class="row" data-magellan-destination='head'>
 		<div class="hero-wrapper twelve independent">
 			<div class="twelve columns hero independent">
@@ -63,10 +50,10 @@
 		</div>
 	</div>
 	
-	<div class="row" id="research" data-magellan-destination='research'></div>
-	<div class="row" id="design" data-magellan-destination='design'></div>
-	<div class="row" id="development" data-magellan-destination='development'></div>
-	
+	<div class="row" id="clients" data-magellan-destination='clients'>
+		
+	</div>
+
 	<div class="row" id="resume" data-magellan-destination='resume'>
 		<div class="twelve column centered">
 			<div id="resumeDownloadArea1" class="text-center"></div>
@@ -85,81 +72,21 @@
 				<div id="educationArea" class="education panel"></div>
 			</div>
 		</div>
-		
-			<div class="twelve column centered">
-				<div id="resumeDownloadArea2" class="text-center"></div>
-			</div>
-		
-	</div>
-	
-	<div id="contact" class="row contactWrapper independent" data-magellan-destination='contact'>
-		
-		<div id="contactForm" class="contactForm column six centered mobile-four">
+		<div class="twelve column centered">
+			<div id="resumeDownloadArea2" class="text-center"></div>
 		</div>
 	</div>
-
-
-       <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-   /*         
-   					var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-*/
-        </script>
-
-	<!-- Included JS Files (Uncompressed) -->
-	<script src="javascripts/foundation/jquery.js"></script>
-	
-	<script src="javascripts/foundation/jquery.cookie.js"></script>
-	
-	<script src="javascripts/foundation/jquery.event.move.js"></script>
-	
-	<script src="javascripts/foundation/jquery.event.swipe.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.accordion.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.alerts.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.buttons.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.clearing.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.forms.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.joyride.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.magellan.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.mediaQueryToggle.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.navigation.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.orbit.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.reveal.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.tabs.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.tooltips.js"></script>
-	
-	<script src="javascripts/foundation/jquery.foundation.topbar.js"></script>
-	
-	<script src="javascripts/foundation/jquery.placeholder.js"></script>
-	
-
-  <!-- Application Javascript, safe to override -->
+	<div id="contact" class="row contactWrapper independent" data-magellan-destination='contact'>
+		<div id="contactForm" class="contactForm column six centered mobile-four"></div>
+	</div>
+	<!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  <![endif]-->
+	<script src="javascripts/foundation/foundation.min.js"></script>
   <script src="javascripts/foundation/app.js"></script>
-
   <script type="text/javascript">
-
-	/* Model */
-	var experienceData = { experience: [
+	var experienceData = { 
+		experience: [
 	  	{
 	      "position": "UX Developer",
 	      "company": "Converse Asia Pacific",
@@ -204,7 +131,6 @@
 	    }
 	  ]
 	};
-
 	var resumeDownloadData = {
 		resumeDownload: [
 			{
@@ -213,7 +139,6 @@
 			}
 		]
 	};
-
 	var skillsData = {
 	  skills: [
 	    {
@@ -271,70 +196,62 @@
 	    }
 	  ]
 	};
-
 	var educationData = {
-		  education: [
-		    {
-		      "institution": "Soka University of America",
-		      "degree": "Liberal Arts Bachelors Degree",
-		      "hasDegree": true,
-		      "major": "Humanities",
-		      "startDate": "2007",
-		      "endDate": "2012"
-		    },
-		    {
-		      "institution": "Shanghai University",
-		      "major": "Chinese",
-		      "startDate": "2012",
-		      "endDate": "2012",
-		      "smallin": true,
-		      "smallout": true,
-		      "rowin": true
-		    },
-		    {
-		      "institution": "Santa Monica College",
-		      "major": "Women's Studies",
-		      "startDate": "2007",
-		      "endDate": "2008",
-		      "smallin": true,
-		      "smallout": true,
-		      "rowout": true
-		    }
-		  ]
-		};
-
-		var contactFormData ={
-			contactForm: [
-				{
-					"headerMessage": "Moshi Moshi.",
-					"nameLabel": "Your Name",
-					"namePlaceholder": "James Brown",
-					"locationPlaceholder": "Zurich, Switzerland",
-					"locationLabel": "Location",
-					"contactLabel": "Contact",
-					"phonePlaceholder": "(+##)-###-###-####",
-					"textareaPlaceholder": "Once upon a time...",
-					"inputButton": "Lets Talk."
-				}
-			]
-		};
-	/* /Model */
-
-	/* Views */
+	  education: [
+	    {
+	      "institution": "Soka University of America",
+	      "degree": "Liberal Arts Bachelors Degree",
+	      "hasDegree": true,
+	      "major": "Humanities",
+	      "startDate": "2007",
+	      "endDate": "2012"
+	    },
+	    {
+	      "institution": "Shanghai University",
+	      "major": "Chinese",
+	      "startDate": "2012",
+	      "endDate": "2012",
+	      "smallin": true,
+	      "smallout": true,
+	      "rowin": true
+	    },
+	    {
+	      "institution": "Santa Monica College",
+	      "major": "Women's Studies",
+	      "startDate": "2007",
+	      "endDate": "2008",
+	      "smallin": true,
+	      "smallout": true,
+	      "rowout": true
+	    }
+	  ]
+	};
+	var contactFormData ={
+		contactForm: [
+			{
+				"headerMessage": "Moshi Moshi.",
+				"nameLabel": "Your Name",
+				"namePlaceholder": "James Brown",
+				"locationPlaceholder": "Zurich, Switzerland",
+				"locationLabel": "Location",
+				"contactLabel": "Contact",
+				"phonePlaceholder": "(+##)-###-###-####",
+				"textareaPlaceholder": "Once upon a time...",
+				"inputButton": "Lets Talk."
+			}
+		]
+	};
   var experienceTemplate = '{{#experience}} <div class="experience-item">' + 
 	  '<h3 class="title inline">{{position}}</h3> | <h3 class="company subheader inline">{{company}}</h3>' + 
 	  '<h4 class="dates">{{startDate}} - {{endDate}}</h4>' + 
 	  '<p>{{description}}</p> </div> {{/experience}}'; 
-
   var resumeDownloadTemplate = '<hr>{{#resumeDownload}}<a href="{{resumeLocation}}" class="button round small">{{buttonText}}</a>{{/resumeDownload}}<hr>'; 
-
   var skillsTemplate = '<ul class="">' +
 		'{{#skills}} {{#rowIn}}<div class="row">{{/rowIn}} <li class=" no-list-style {{width}} {{column}} {{skill}}"><h3>{{skill}}</h3>' +
 		'<div class="radius progress   {{colorContext}}"><span class="meter"></span></div>' +
 		'<ul class="inline-list">' +
 		'{{#relevance}}<li>{{.}}</li>{{/relevance}}' +
 		'</ul></li> {{#rowOut}}</div>{{/rowOut}}</ul>{{/skills}}';
-
   var educationTemplate = '{{#education}}'+
 		'{{#rowin}}<div class="row">{{/rowin}}'+
 		'{{#smallin}}<div class="six column">{{/smallin}}'+
@@ -345,43 +262,35 @@
 		'{{#smallout}}</div>{{/smallout}}'+
 		'{{#rowout}}</div></div>{{/rowout}}'+
 		'{{/education}}';
-		
 	var contactFormTemplate = '{{#contactForm}}<h2 class="green-topborder">{{headerMessage}}</h2>'+
-			'<form>'+
-			 '<label>{{nameLabel}}</label>'+
-			  '<input type="text" placeholder="{{namePlaceholder}}" />'+
-			  '<div class="row">'+
-			    '<div class="six columns">'+
-			    	'<label>{{locationLabel}}</label>'+
-			      '<input type="text" placeholder="{{locationPlaceholder}}" />'+
-			    '</div>'+
-			    '<div class="six columns">'+
-			      '<label>{{contactLabel}}Contact</label>'+
-			      '<input type="text" placeholder="{{phonePlaceholder}}" />'+
-			    '</div>'+
-			  '</div>'+
-			  '<label>{{messageLabel}}</label>'+
-			  '<textarea placeholder="{{textareaPlaceholder}}"></textarea>'+
-			  '<input type="submit" class="large success radius button even twelve" value="{{inputButton}}" />'+
-			'</form>{{/contactForm}}';
-
-  /* /Views */
-  
-  /* Controller */
+		'<form>'+
+		 '<label>{{nameLabel}}</label>'+
+		  '<input type="text" placeholder="{{namePlaceholder}}" />'+
+		  '<div class="row">'+
+		    '<div class="six columns">'+
+		    	'<label>{{locationLabel}}</label>'+
+		      '<input type="text" placeholder="{{locationPlaceholder}}" />'+
+		    '</div>'+
+		    '<div class="six columns">'+
+		      '<label>{{contactLabel}}Contact</label>'+
+		      '<input type="text" placeholder="{{phonePlaceholder}}" />'+
+		    '</div>'+
+		  '</div>'+
+		  '<label>{{messageLabel}}</label>'+
+		  '<textarea placeholder="{{textareaPlaceholder}}"></textarea>'+
+		  '<input type="submit" class="large success radius button even twelve" value="{{inputButton}}" />'+
+		'</form>{{/contactForm}}';
   var viewExperience = Mustache.to_html(experienceTemplate, experienceData); 
   var viewResumeDownload = Mustache.to_html(resumeDownloadTemplate, resumeDownloadData); 
   var viewSkills = Mustache.to_html(skillsTemplate, skillsData); 
   var viewEducation = Mustache.to_html(educationTemplate, educationData); 
   var viewContactForm = Mustache.to_html(contactFormTemplate, contactFormData); 
-
   $('#experienceArea').html(viewExperience);
   $('#resumeDownloadArea1').html(viewResumeDownload);
   $('#resumeDownloadArea2').html(viewResumeDownload);
   $('#skillsArea').html(viewSkills);
   $('#educationArea').html(viewEducation);
   $('#contactForm').html(viewContactForm);
-  /* /Controller */
 	</script>
-  
 </body>
 </html>
