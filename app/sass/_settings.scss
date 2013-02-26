@@ -296,7 +296,17 @@ h1, h2{
     }
   }   
 }
-
+.orange-back{
+  background: #19B352 !important;
+}
+.orange-back:hover{
+  background: lighten(#19B352, 20%) !important;
+}
+.active.orange-back{
+  background: darken(#19B352, 20%) !important;
+  a{
+  }
+}
 .rotate45{
   /* Safari */
   -webkit-transform: rotate(-90deg);
@@ -487,18 +497,6 @@ h3{
 .education{ 
 
 }
-
-.magel{
-  position: absolute;
-  padding-left: 3em;
-  ul{
-    list-style: none;
-  }
-}
-.justTheTip{
-  display: inline-block;
-  margin-left: -3px;
-}
 div.arrow-right {
   width: 0;
   height: 0;
@@ -508,17 +506,4 @@ div.arrow-right {
   border-top: 80px solid transparent;
   border-bottom: 80px solid transparent;
   margin-bottom: -45px;
-}
-.lamb{
-  width:120%;
-}
-#clients{
-  max-width: 100%;
-  overflow:scroll;
-  #client-wrap{
-    width: 15000px;
-    td{
-      width: 100%;
-    }
-  }
 }

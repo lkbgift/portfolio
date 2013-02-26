@@ -22,81 +22,80 @@
 	</script>
 </head>
 <body>
-	<div class="contain-to-grid top-nav">	
-    <nav class="top-bar ">
-      <ul>
-        <li class="name"><h1><a href="#">Remember Lenny</a></h1></li>
-				<li class="toggle-topbar"><a href="#"></a></li>
-      </ul>
-      <section>
-        <ul class="right" data-magellan-expedition>
-          <li data-magellan-arrival='head' class="divider show-for-medium-and-up"></li>
-				  <li data-magellan-arrival='clients'><a href="#clients">Clients</a></li>
-				  <li class="divider"></li>
-				  <li data-magellan-arrival='resume'><a href="#resume">Resume</a></li>
-				  <li class="divider"></li>
-				  <li data-magellan-arrival='contact'><a href="#contact">Contact Now</a></li>
-				  <li class="divider"></li>
-        </ul>
-      </section>
-    </nav>
-  </div>	
-	<div class="" id="clients" data-magellan-destination='clients'>
-		<div id="client-wrap">
-			<div class="client">
-				<div class="hero-wrapper twelve independent">
-					<div class=" columns hero independent">
-						<div class="lamb">
-							<h1 class="bold-header red-highlight">Remember Lenny </h1>
-							<span class="justTheTip">
-								<div class="arrow-right"></div>
-							</span>
+	<div id="topNavArea"></div>
+	<div class="" id="hero">
+		<div class="row hero-wrapper  independent">
+			<div class=" columns hero independent">
+				<div class="lamb">
+					<h1 class="bold-header red-highlight">Remember Lenny </h1>
+				</div>
+			</div>
+	</div>
+	<div class="" id="services" data-magellan-destination='services'>
+			<div class="row">
+				<div class="header text-center">
+					<h2>Services</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="row">
+					<div class="six column">
+						<div class="six column"> 
+							<img src="images/services/responsive.png" alt="">
+						</div>
+						<div class="six column">
+							<h3>Responsive Development</h3>
+							<h3 class="subheader">
+								Beautiful mobile-ready websites.
+							</h3>
+						</div>
+					</div>
+					<div class="six column">
+						<div class="six column"> 
+							<img src="images/services/ux.jpg" alt="">
+						</div>
+						<div class="six column">
+							<h3>User Experience Research</h3>
+							<h3 class="subheader">Understand your audience and take action.</h3>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="client converse"> 
-				<div class="messaging">
-					<h2>UX Development</h2>
-					<h3>Past Clients</h3>
-					<ul>
-						<li>Converse Asia Pacific</li>
-						<li>iTalki</li>
-					</ul>
-					<p></p>
-				</div>
-				<div class="grid99">
-					<div class="grid31">
-						<img src="images/600.png" alt="">
-						<img src="images/600.png" alt="">
-						<img src="images/600.png" alt="">
+				<div class="row">
+					<div class="six column">
+						<div class="six column">
+							<h3>E-commerce Websites</h3>
+							<h3 class="subheader">
+								Claim your international market share.
+							</h3>
+						</div>
+						<div class="six column"> 
+							<img src="images/services/ecommerce.jpg" alt="">
+						</div>
 					</div>
-					<div class="grid31">
-						<img src="images/600.png" alt="">
-						<img src="images/600.png" alt="">
-						<img src="images/600.png" alt="">
+					<div class="six column">
+						<div class="six column">
+							<h3>WordPress Theme</h3>
+							<h3 class="subheader">Bespoke themes built for your needs.</h3>
+						</div>
+						<div class="six column"> 
+							<img src="images/services/wordpress.jpg" alt="">
+						</div>
 					</div>
-					<div class="grid31">
-						<img src="images/600.png" alt="">
-						<img src="images/600.png" alt="">
-						<img src="images/600.png" alt="">
-					</div>
+				<div class="column twelve" id="clientSeeArea"></div>
 				</div>
-			</div>
-			<div class="client responsive"> 
-				<div class="windowCase">
-					<img src="images/completeWindowTrans.png" alt="">
-				</div>
-			</div>
-			<div class="client"><img src="images/600.png" alt=""> </div>
-			<div class="client"><img src="images/600.png" alt=""> </div>
-		</div>
 	</div>
-
+	<div class="" id="consulting" data-magellan-destination='consulting'>
+		<div class="row">
+			<div class="twelve column text-center">
+				<div class="header">
+					<h2>Consulting</h2>
+				</div>
+				<div id="consultingArea"></div>
+				<div id="contactNowArea"></div>
+			</div>
+			
+	</div>
 	<div class="row" id="resume" data-magellan-destination='resume'>
-		<div class="twelve column centered">
-			<div id="resumeDownloadArea1" class="text-center"></div>
-		</div>
 		<div class="experience column eight mobile-four">
 			<h2 class="red-topborder">Experience</h2>
 			<div id="experienceArea"></div>
@@ -112,7 +111,7 @@
 			</div>
 		</div>
 		<div class="twelve column centered">
-			<div id="resumeDownloadArea2" class="text-center"></div>
+			<div id="resumeDownloadArea" class="text-center"></div>
 		</div>
 	</div>
 	<div id="contact" class="row contactWrapper independent" data-magellan-destination='contact'>
@@ -124,6 +123,55 @@
 	<script src="javascripts/foundation/foundation.min.js"></script>
   <script src="javascripts/foundation/app.js"></script>
   <script type="text/javascript">
+  var topNavData = {
+  	left: [
+  		{
+  			"title": "Remember Lenny"
+  		},
+  	],
+  	right: [
+  		{
+  			"reference": "services",
+  			"title": "Services"
+  		},
+  		{
+  			"reference": "consulting",
+  			"title": "Consult"
+  		},
+  		{
+  			"reference": "clients",
+  			"title": "Clients"
+  		},
+  		{
+  			"reference": "resume",
+  			"title": "Resume"
+  		},
+  		{
+  			"reference": "contact",
+  			"title": "Contact Now",
+  			"attention": true
+  		}
+  	]
+  };
+  var consultingData = {
+  	consulting: [
+  		{
+				"image": "images/consulting/timeline.png",
+  			"title": "Project Management",
+  			"description": "Research, planning, and milestone execution consulting are available. In-progress and new projects are welcomed. Experience with in-house and outsourced teams.",
+  		},
+  		{
+				"image": "images/consulting/report.png",
+  			"title": "Analysis and Report",
+  			"description": "Code audits, speed analysis, and search result targeted syntax review. Websites are analyzed to produce in-depth reports for improvement. Experience with large international brands.",
+  		},
+  		{
+				"image": "images/consulting/training.png",
+  			"title": "Team Training",
+  			"description": "Front-end best practices, web development introduction, and team organization. Emphasis on scalable and maintainable CSS. Experience with SCRUM and iterative development.",
+  		}
+  	]
+  };
 	var experienceData = { 
 		experience: [
 	  	{
@@ -170,10 +218,26 @@
 	    }
 	  ]
 	};
-	var resumeDownloadData = {
-		resumeDownload: [
+	var clientSeeData = {
+		ctaData: [
 			{
-				"resumeLocation": "downloads/RememberLenny.pdf",
+				"ctaLocation": "#client",
+				"buttonText": "View Past Clients"
+			}
+		]
+	};
+	var contactNowData = {
+		ctaData: [
+			{
+				"ctaLocation": "#contact",
+				"buttonText": "Contact Lenny"
+			}
+		]
+	};
+	var resumeDownloadData = {
+		ctaData: [
+			{
+				"ctaLocation": "downloads/RememberLenny.pdf",
 				"buttonText": "Download Resume PDF"
 			}
 		]
@@ -280,11 +344,40 @@
 			}
 		]
 	};
+
+	var topNavTemplate = '{{#left}}'+
+		 '<div class="contain-to-grid top-nav"> ' +
+		   '<nav class="top-bar ">' +
+		      '<ul>' +
+						'<li class="name"><h1><a href="#">{{title}}</a></h1></li>' +
+						'<li class="toggle-topbar"><a href="#"></a></li>' +
+		      '</ul>' +
+		      '{{/left}}'+
+			      '<section>'+
+				      '<ul class="right" data-magellan-expedition>' +
+								'<li data-magellan-arrival="head" class="divider show-for-medium-and-up"></li>' +
+					      '{{#right}} ' +
+								'<li data-magellan-arrival="{{reference}}" class="{{#attention}}orange-back {{/attention}}"><a href="#{{reference}}">{{title}}</a></li>' +
+								'<li class="divider"></li>' +
+								'{{/right}}' + 
+				       '</ul>' +
+			      '</section>' +
+			   '</nav>' +
+			'</div>';
+	var consultingTemplate = '{{#consulting}}' +
+			'<div class="four column">' +
+        '<div class="consulting-item">' +
+					'<img  src="{{image}}" alt="">' +
+					'<h3>{{title}}</h3>' +
+          '<p class="text-left">{{description}}</p>' +
+        '</div>' +
+      '</div>' +
+      '{{/consulting}}';
   var experienceTemplate = '{{#experience}} <div class="experience-item">' + 
 	  '<h3 class="title inline">{{position}}</h3> | <h3 class="company subheader inline">{{company}}</h3>' + 
 	  '<h4 class="dates">{{startDate}} - {{endDate}}</h4>' + 
 	  '<p>{{description}}</p> </div> {{/experience}}'; 
-  var resumeDownloadTemplate = '<hr>{{#resumeDownload}}<a href="{{resumeLocation}}" class="button round small">{{buttonText}}</a>{{/resumeDownload}}<hr>'; 
+  var ctaTemplate = '<div class="text-center"><hr>{{#ctaData}}<a href="{{ctaLocation}}" class="button round small">{{buttonText}}</a>{{/ctaData}}<hr></div>'; 
   var skillsTemplate = '<ul class="">' +
 		'{{#skills}} {{#rowIn}}<div class="row">{{/rowIn}} <li class=" no-list-style {{width}} {{column}} {{skill}}"><h3>{{skill}}</h3>' +
 		'<div class="radius progress   {{colorContext}}"><span class="meter"></span></div>' +
@@ -319,26 +412,27 @@
 		  '<textarea placeholder="{{textareaPlaceholder}}"></textarea>'+
 		  '<input type="submit" class="large success radius button even twelve" value="{{inputButton}}" />'+
 		'</form>{{/contactForm}}';
-  var viewExperience = Mustache.to_html(experienceTemplate, experienceData); 
-  var viewResumeDownload = Mustache.to_html(resumeDownloadTemplate, resumeDownloadData); 
-  var viewSkills = Mustache.to_html(skillsTemplate, skillsData); 
-  var viewEducation = Mustache.to_html(educationTemplate, educationData); 
-  var viewContactForm = Mustache.to_html(contactFormTemplate, contactFormData); 
+
+  var viewTopNav 					= Mustache.to_html(topNavTemplate, 			topNavData); 
+  var viewConsulting 			= Mustache.to_html(consultingTemplate, 	consultingData); 
+  var viewExperience 			= Mustache.to_html(experienceTemplate, 	experienceData); 
+  var viewResumeDownload 	= Mustache.to_html(ctaTemplate, 				resumeDownloadData); 
+  var viewClient 					= Mustache.to_html(ctaTemplate, 				clientSeeData); 
+  var viewContactNow	 		= Mustache.to_html(ctaTemplate, 				contactNowData); 
+  var viewSkills 					= Mustache.to_html(skillsTemplate, 			skillsData); 
+  var viewEducation 			= Mustache.to_html(educationTemplate, 	educationData); 
+  var viewContactForm 		= Mustache.to_html(contactFormTemplate, contactFormData); 
+
+  $('#topNavArea').html(viewTopNav);
+  $('#consultingArea').html(viewConsulting);
   $('#experienceArea').html(viewExperience);
-  $('#resumeDownloadArea1').html(viewResumeDownload);
-  $('#resumeDownloadArea2').html(viewResumeDownload);
+  $('#clientSeeArea').html(viewClient);
+  $('#contactNowArea').html(viewContactNow);
+  $('#resumeDownloadArea').html(viewResumeDownload);
   $('#skillsArea').html(viewSkills);
   $('#educationArea').html(viewEducation);
   $('#contactForm').html(viewContactForm);
 
-	$(function(){
-		$("#client-wrap").wrapInner("<table cellspacing='30'><tr>");
-		$(".client").wrap("<td></td>");
-		$("body").mousewheel(function(event, delta) {
-			this.scrollLeft -= (delta * 30);
-			event.preventDefault();
-		});   
-	});
 	</script>
 </body>
 </html>
