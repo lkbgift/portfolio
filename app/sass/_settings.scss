@@ -1,5 +1,160 @@
 @import "foundation/common/ratios";
 
+$fontFileName: "../stylesheets/fonts/general_foundicons";
+$fontName: "GeneralFoundicons";
+$classPrefix: "foundicon-";
+
+@mixin i-class($name,$pua) {
+  .#{$classPrefix}#{$name}:before { 
+    content: "\f#{$pua}";
+  }
+}
+
+@mixin ie-class($name,$pua) {
+  .#{$classPrefix}#{$name} { 
+    *zoom: expression( this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf#{$pua};"); 
+  }
+}
+
+@mixin face {
+  @font-face { 
+    font-family: $fontName;
+    src: url('#{$fontFileName}.eot');
+    src: url('#{$fontFileName}.eot?#iefix') format('embedded-opentype'),
+         url('#{$fontFileName}.woff') format('woff'),
+         url('#{$fontFileName}.ttf') format('truetype'),
+         url('#{$fontFileName}.svg##{$fontName}') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+
+/* font-face */
+@include face;
+
+/* general icons for IE7 */
+[class*="#{$classPrefix}"] {
+  font-family: $fontName;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@include ie-class(settings,"000");
+@include ie-class(heart,"001");
+@include ie-class(star,"002");
+@include ie-class(plus,"003");
+@include ie-class(minus,"004");
+@include ie-class(checkmark,"005");
+@include ie-class(remove,"006");
+@include ie-class(mail,"007");
+@include ie-class(calendar,"008");
+@include ie-class(page,"009");
+@include ie-class(tools,"00a");
+@include ie-class(globe,"00b");
+@include ie-class(home,"00c");
+@include ie-class(quote,"00d");
+@include ie-class(people,"00e");
+@include ie-class(monitor,"00f");
+@include ie-class(laptop,"010");
+@include ie-class(phone,"011");
+@include ie-class(cloud,"012");
+@include ie-class(error,"013");
+@include ie-class(right-arrow,"014");
+@include ie-class(left-arrow,"015");
+@include ie-class(up-arrow,"016");
+@include ie-class(down-arrow,"017");
+@include ie-class(trash,"018");
+@include ie-class(add-doc,"019");
+@include ie-class(edit,"01a");
+@include ie-class(lock,"01b");
+@include ie-class(unlock,"01c");
+@include ie-class(refresh,"01d");
+@include ie-class(paper-clip,"01e");
+@include ie-class(video,"01f");
+@include ie-class(photo,"020");
+@include ie-class(graph,"021");
+@include ie-class(idea,"022");
+@include ie-class(mic,"023");
+@include ie-class(cart,"024");
+@include ie-class(address-book,"025");
+@include ie-class(compass,"026");
+@include ie-class(flag,"027");
+@include ie-class(location,"028");
+@include ie-class(clock,"029");
+@include ie-class(folder,"02a");
+@include ie-class(inbox,"02b");
+@include ie-class(website,"02c");
+@include ie-class(smiley,"02d");
+@include ie-class(search,"02e");
+
+/* global foundicon styles */
+[class*="#{$classPrefix}"] {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: inherit;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+[class*="#{$classPrefix}"]:before {
+  font-family: $fontName;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+}
+
+/* icons */
+@include i-class(settings,"000");
+@include i-class(heart,"001");
+@include i-class(star,"002");
+@include i-class(plus,"003");
+@include i-class(minus,"004");
+@include i-class(checkmark,"005");
+@include i-class(remove,"006");
+@include i-class(mail,"007");
+@include i-class(calendar,"008");
+@include i-class(page,"009");
+@include i-class(tools,"00a");
+@include i-class(globe,"00b");
+@include i-class(home,"00c");
+@include i-class(quote,"00d");
+@include i-class(people,"00e");
+@include i-class(monitor,"00f");
+@include i-class(laptop,"010");
+@include i-class(phone,"011");
+@include i-class(cloud,"012");
+@include i-class(error,"013");
+@include i-class(right-arrow,"014");
+@include i-class(left-arrow,"015");
+@include i-class(up-arrow,"016");
+@include i-class(down-arrow,"017");
+@include i-class(trash,"018");
+@include i-class(add-doc,"019");
+@include i-class(edit,"01a");
+@include i-class(lock,"01b");
+@include i-class(unlock,"01c");
+@include i-class(refresh,"01d");
+@include i-class(paper-clip,"01e");
+@include i-class(video,"01f");
+@include i-class(photo,"020");
+@include i-class(graph,"021");
+@include i-class(idea,"022");
+@include i-class(mic,"023");
+@include i-class(cart,"024");
+@include i-class(address-book,"025");
+@include i-class(compass,"026");
+@include i-class(flag,"027");
+@include i-class(location,"028");
+@include i-class(clock,"029");
+@include i-class(folder,"02a");
+@include i-class(inbox,"02b");
+@include i-class(website,"02c");
+@include i-class(smiley,"02d");
+@include i-class(search,"02e");
+
 // Settings file containing Foundation defaults
 
 // Grid Settings
@@ -14,7 +169,7 @@
 
 $mainColor: #4981F7;
 $secondaryColor: #A082BF;
-// $alertColor: #c60f13;
+$alertColor: lighten(#E33100, 10%);
 $successColor: #19B352;
 // $txtColor: #222;
 // $highlightColor: #ffff99;
@@ -243,7 +398,10 @@ $topBarLinkWeight: normal;
 // Produced the following list of values: 14, 17, 23, 27, 37, 44, 59, 71, 95, 115;
 // http://www.modularscale.com by Tim Brown
 // https://github.com/scottkellum/modular-scale by scottkellum
-
+hr{ padding-bottom:3em;}
+body{
+  padding-top:5em;
+}
 @font-face {
     font-family: 'pf_din_text_comp_probold';
     src: url('fonts/parachute_-_pfdintextcomppro-bold-webfont.eot');
@@ -286,6 +444,37 @@ $topBarLinkWeight: normal;
 h1, h2{
   text-transform: uppercase;
 }
+
+.fc-webicon { display: inline-block; background-size: 100%; width: 30px; height: 30px; text-indent: -999em; text-align: left; -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; margin-bottom: 5px; }
+.fc-webicon:hover { margin: -1px 0 1px; -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25); -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25); box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25); }
+.fc-webicon.small { width: 20px; height: 20px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+.fc-webicon.large { width: 48px; height: 48px; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; }
+
+
+/* Github */
+.no-svg .fc-webicon.github { background: url("../images/icons/fc-webicon-github-m.png"); }
+.no-svg .fc-webicon.github.large { background: url("../images/icons/fc-webicon-github.png"); }
+.no-svg .fc-webicon.github.small { background: url("../images/icons/fc-webicon-github-s.png"); }
+.svg .fc-webicon.github { background: url("../images/icons/fc-webicon-github.svg"); }
+
+/* RSS */
+.no-svg .fc-webicon.rss { background: url("../images/icons/fc-webicon-rss-m.png"); }
+.no-svg .fc-webicon.rss.large { background: url("../images/icons/fc-webicon-rss.png"); }
+.no-svg .fc-webicon.rss.small { background: url("../images/icons/fc-webicon-rss-s.png"); }
+.svg .fc-webicon.rss { background: url("../images/icons/fc-webicon-rss.svg"); }
+
+
+/* Twitter */
+.no-svg .fc-webicon.twitter { background: url("../images/icons/fc-webicon-twitter-m.png"); }
+.no-svg .fc-webicon.twitter.large { background: url("../images/icons/fc-webicon-twitter.png"); }
+.no-svg .fc-webicon.twitter.small { background: url("../images/icons/fc-webicon-twitter-s.png"); }
+.svg .fc-webicon.twitter { background: url("../images/icons/fc-webicon-twitter.svg"); }
+
+/* LinkedIn */
+.no-svg .fc-webicon.linkedin { background: url("../images/icons/fc-webicon-linkedin-m.png"); }
+.no-svg .fc-webicon.linkedin.large { background: url("../images/icons/fc-webicon-linkedin.png"); }
+.no-svg .fc-webicon.linkedin.small { background: url("../images/icons/fc-webicon-linkedin-s.png"); }
+.svg .fc-webicon.linkedin { background: url("../images/icons/fc-webicon-linkedin.svg"); }
 
 .grid99{
   width: 100%;
@@ -338,6 +527,11 @@ span.desktop-highlight {
   font-size: 22px;
   padding: 3px 15px;
 }
+.purple-topborder{
+  border-top: .3em solid;
+  border-color: rgb(160, 130, 191);
+  border-color: rgba(160, 130, 191, 0.8);
+}
 .blue-topborder{
   border-top: .3em solid;
   border-color: rgb(73, 129, 248);
@@ -366,12 +560,13 @@ span.desktop-highlight {
   -o-user-select: none;
   user-select: none;    
   h1{
-    margin-left: -.2em;
+    margin-left: 0em;
     font-size: 7em;
     margin-bottom: 0em;
-    padding: .05em .2em 0em;
+    padding: .0em .2em 0em;
     line-height: 1em;
     display: inline-block;
+    margin-top:7%;
   }
   h3{
     font-size: 4em;
@@ -379,6 +574,14 @@ span.desktop-highlight {
     border-bottom: 3px solid;
     border-color: rgb(111, 111, 111);
     border-color: rgba(111, 111, 111, 0.8);
+  }
+}
+.button.secondary{
+  color: white !important;
+}
+@media only screen and (max-width: 767px) {
+  .hero h1{
+    font-size: 2em;
   }
 }
 
@@ -506,4 +709,11 @@ div.arrow-right {
   border-top: 80px solid transparent;
   border-bottom: 80px solid transparent;
   margin-bottom: -45px;
+}
+.top-nav-bar{
+  top: 0!important;
+}
+#hero-title{
+  display: block;
+  width: 100%;
 }

@@ -1,3 +1,522 @@
+/* font-face */
+@font-face {
+  font-family: "GeneralFoundicons";
+  src: url("../stylesheets/fonts/general_foundicons.eot");
+  src: url("../stylesheets/fonts/general_foundicons.eot?#iefix") format("embedded-opentype"), url("../stylesheets/fonts/general_foundicons.woff") format("woff"), url("../stylesheets/fonts/general_foundicons.ttf") format("truetype"), url("../stylesheets/fonts/general_foundicons.svg#GeneralFoundicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* general icons for IE7 */
+/* line 37, ../sass/_settings.scss */
+[class*="foundicon-"] {
+  font-family: "GeneralFoundicons";
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-settings {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf000;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-heart {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf001;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-star {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf002;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-plus {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf003;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-minus {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf004;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-checkmark {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf005;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-remove {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf006;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-mail {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf007;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-calendar {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf008;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-page {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf009;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-tools {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf00a;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-globe {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf00b;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-home {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf00c;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-quote {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf00d;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-people {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf00e;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-monitor {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf00f;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-laptop {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf010;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-phone {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf011;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-cloud {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf012;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-error {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf013;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-right-arrow {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf014;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-left-arrow {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf015;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-up-arrow {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf016;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-down-arrow {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf017;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-trash {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf018;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-add-doc {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf019;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-edit {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf01a;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-lock {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf01b;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-unlock {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf01c;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-refresh {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf01d;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-paper-clip {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf01e;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-video {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf01f;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-photo {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf020;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-graph {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf021;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-idea {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf022;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-mic {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf023;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-cart {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf024;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-address-book {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf025;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-compass {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf026;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-flag {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf027;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-location {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf028;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-clock {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf029;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-folder {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf02a;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-inbox {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf02b;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-website {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf02c;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-smiley {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf02d;");
+}
+
+/* line 14, ../sass/_settings.scss */
+.foundicon-search {
+  *zoom: expression(this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf02e;");
+}
+
+/* global foundicon styles */
+/* line 92, ../sass/_settings.scss */
+[class*="foundicon-"] {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: inherit;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+/* line 102, ../sass/_settings.scss */
+[class*="foundicon-"]:before {
+  font-family: "GeneralFoundicons";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+}
+
+/* icons */
+/* line 8, ../sass/_settings.scss */
+.foundicon-settings:before {
+  content: "\f000";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-heart:before {
+  content: "\f001";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-star:before {
+  content: "\f002";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-plus:before {
+  content: "\f003";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-minus:before {
+  content: "\f004";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-checkmark:before {
+  content: "\f005";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-remove:before {
+  content: "\f006";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-mail:before {
+  content: "\f007";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-calendar:before {
+  content: "\f008";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-page:before {
+  content: "\f009";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-tools:before {
+  content: "\f00a";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-globe:before {
+  content: "\f00b";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-home:before {
+  content: "\f00c";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-quote:before {
+  content: "\f00d";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-people:before {
+  content: "\f00e";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-monitor:before {
+  content: "\f00f";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-laptop:before {
+  content: "\f010";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-phone:before {
+  content: "\f011";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-cloud:before {
+  content: "\f012";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-error:before {
+  content: "\f013";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-right-arrow:before {
+  content: "\f014";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-left-arrow:before {
+  content: "\f015";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-up-arrow:before {
+  content: "\f016";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-down-arrow:before {
+  content: "\f017";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-trash:before {
+  content: "\f018";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-add-doc:before {
+  content: "\f019";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-edit:before {
+  content: "\f01a";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-lock:before {
+  content: "\f01b";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-unlock:before {
+  content: "\f01c";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-refresh:before {
+  content: "\f01d";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-paper-clip:before {
+  content: "\f01e";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-video:before {
+  content: "\f01f";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-photo:before {
+  content: "\f020";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-graph:before {
+  content: "\f021";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-idea:before {
+  content: "\f022";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-mic:before {
+  content: "\f023";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-cart:before {
+  content: "\f024";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-address-book:before {
+  content: "\f025";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-compass:before {
+  content: "\f026";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-flag:before {
+  content: "\f027";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-location:before {
+  content: "\f028";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-clock:before {
+  content: "\f029";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-folder:before {
+  content: "\f02a";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-inbox:before {
+  content: "\f02b";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-website:before {
+  content: "\f02c";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-smiley:before {
+  content: "\f02d";
+}
+
+/* line 8, ../sass/_settings.scss */
+.foundicon-search:before {
+  content: "\f02e";
+}
+
+/* line 401, ../sass/_settings.scss */
+hr {
+  padding-bottom: 3em;
+}
+
+/* line 402, ../sass/_settings.scss */
+body {
+  padding-top: 5em;
+}
+
 @font-face {
   font-family: 'pf_din_text_comp_probold';
   src: url("fonts/parachute_-_pfdintextcomppro-bold-webfont.eot");
@@ -22,50 +541,177 @@
   font-style: normal;
 }
 
-/* line 280, ../sass/_settings.scss */
+/* line 438, ../sass/_settings.scss */
 .inline-block {
   display: inline-block;
 }
 
-/* line 283, ../sass/_settings.scss */
+/* line 441, ../sass/_settings.scss */
 .no-list-style {
   list-style: none;
 }
 
-/* line 286, ../sass/_settings.scss */
+/* line 444, ../sass/_settings.scss */
 h1, h2 {
   text-transform: uppercase;
 }
 
-/* line 290, ../sass/_settings.scss */
+/* line 448, ../sass/_settings.scss */
+.fc-webicon {
+  display: inline-block;
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  text-indent: -999em;
+  text-align: left;
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+/* line 449, ../sass/_settings.scss */
+.fc-webicon:hover {
+  margin: -1px 0 1px;
+  -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* line 450, ../sass/_settings.scss */
+.fc-webicon.small {
+  width: 20px;
+  height: 20px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 451, ../sass/_settings.scss */
+.fc-webicon.large {
+  width: 48px;
+  height: 48px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+
+/* Github */
+/* line 455, ../sass/_settings.scss */
+.no-svg .fc-webicon.github {
+  background: url("../images/icons/fc-webicon-github-m.png");
+}
+
+/* line 456, ../sass/_settings.scss */
+.no-svg .fc-webicon.github.large {
+  background: url("../images/icons/fc-webicon-github.png");
+}
+
+/* line 457, ../sass/_settings.scss */
+.no-svg .fc-webicon.github.small {
+  background: url("../images/icons/fc-webicon-github-s.png");
+}
+
+/* line 458, ../sass/_settings.scss */
+.svg .fc-webicon.github {
+  background: url("../images/icons/fc-webicon-github.svg");
+}
+
+/* RSS */
+/* line 461, ../sass/_settings.scss */
+.no-svg .fc-webicon.rss {
+  background: url("../images/icons/fc-webicon-rss-m.png");
+}
+
+/* line 462, ../sass/_settings.scss */
+.no-svg .fc-webicon.rss.large {
+  background: url("../images/icons/fc-webicon-rss.png");
+}
+
+/* line 463, ../sass/_settings.scss */
+.no-svg .fc-webicon.rss.small {
+  background: url("../images/icons/fc-webicon-rss-s.png");
+}
+
+/* line 464, ../sass/_settings.scss */
+.svg .fc-webicon.rss {
+  background: url("../images/icons/fc-webicon-rss.svg");
+}
+
+/* Twitter */
+/* line 468, ../sass/_settings.scss */
+.no-svg .fc-webicon.twitter {
+  background: url("../images/icons/fc-webicon-twitter-m.png");
+}
+
+/* line 469, ../sass/_settings.scss */
+.no-svg .fc-webicon.twitter.large {
+  background: url("../images/icons/fc-webicon-twitter.png");
+}
+
+/* line 470, ../sass/_settings.scss */
+.no-svg .fc-webicon.twitter.small {
+  background: url("../images/icons/fc-webicon-twitter-s.png");
+}
+
+/* line 471, ../sass/_settings.scss */
+.svg .fc-webicon.twitter {
+  background: url("../images/icons/fc-webicon-twitter.svg");
+}
+
+/* LinkedIn */
+/* line 474, ../sass/_settings.scss */
+.no-svg .fc-webicon.linkedin {
+  background: url("../images/icons/fc-webicon-linkedin-m.png");
+}
+
+/* line 475, ../sass/_settings.scss */
+.no-svg .fc-webicon.linkedin.large {
+  background: url("../images/icons/fc-webicon-linkedin.png");
+}
+
+/* line 476, ../sass/_settings.scss */
+.no-svg .fc-webicon.linkedin.small {
+  background: url("../images/icons/fc-webicon-linkedin-s.png");
+}
+
+/* line 477, ../sass/_settings.scss */
+.svg .fc-webicon.linkedin {
+  background: url("../images/icons/fc-webicon-linkedin.svg");
+}
+
+/* line 479, ../sass/_settings.scss */
 .grid99 {
   width: 100%;
 }
-/* line 292, ../sass/_settings.scss */
+/* line 481, ../sass/_settings.scss */
 .grid99 .grid31 {
   width: 100%;
 }
-/* line 294, ../sass/_settings.scss */
+/* line 483, ../sass/_settings.scss */
 .grid99 .grid31 img {
   width: 30%;
 }
 
-/* line 299, ../sass/_settings.scss */
+/* line 488, ../sass/_settings.scss */
 .orange-back {
   background: #19b352 !important;
 }
 
-/* line 302, ../sass/_settings.scss */
+/* line 491, ../sass/_settings.scss */
 .orange-back:hover {
   background: #4ce685 !important;
 }
 
-/* line 305, ../sass/_settings.scss */
+/* line 494, ../sass/_settings.scss */
 .active.orange-back {
   background: #0c5a29 !important;
 }
 
-/* line 310, ../sass/_settings.scss */
+/* line 499, ../sass/_settings.scss */
 .rotate45 {
   /* Safari */
   -webkit-transform: rotate(-90deg);
@@ -79,14 +725,14 @@ h1, h2 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=4);
 }
 
-/* line 328, ../sass/_settings.scss */
+/* line 517, ../sass/_settings.scss */
 .red-highlight {
   background: #e33100;
   background: rgba(227, 49, 0, 0.8);
   color: white;
 }
 
-/* line 334, ../sass/_settings.scss */
+/* line 523, ../sass/_settings.scss */
 span.desktop-highlight {
   background: #181818;
   background: rgba(24, 24, 24, 0.75);
@@ -95,34 +741,41 @@ span.desktop-highlight {
   padding: 3px 15px;
 }
 
-/* line 341, ../sass/_settings.scss */
+/* line 530, ../sass/_settings.scss */
+.purple-topborder {
+  border-top: 0.3em solid;
+  border-color: #a082bf;
+  border-color: rgba(160, 130, 191, 0.8);
+}
+
+/* line 535, ../sass/_settings.scss */
 .blue-topborder {
   border-top: 0.3em solid;
   border-color: #4981f8;
   border-color: rgba(73, 129, 248, 0.8);
 }
 
-/* line 346, ../sass/_settings.scss */
+/* line 540, ../sass/_settings.scss */
 .red-topborder {
   border-top: 0.3em solid;
   border-color: #e33100;
   border-color: rgba(227, 49, 0, 0.8);
 }
 
-/* line 351, ../sass/_settings.scss */
+/* line 545, ../sass/_settings.scss */
 .green-topborder {
   border-top: 0.3em solid;
   border-color: #5ae78e;
   border-color: rgba(90, 231, 142, 0.8);
 }
 
-/* line 356, ../sass/_settings.scss */
+/* line 550, ../sass/_settings.scss */
 .independent {
   margin-top: 10% !important;
   margin-bottom: 10% !important;
 }
 
-/* line 360, ../sass/_settings.scss */
+/* line 554, ../sass/_settings.scss */
 .hero {
   -webkit-user-select: none;
   /* Chrome all / Safari all */
@@ -134,16 +787,17 @@ span.desktop-highlight {
   -o-user-select: none;
   user-select: none;
 }
-/* line 368, ../sass/_settings.scss */
+/* line 562, ../sass/_settings.scss */
 .hero h1 {
-  margin-left: -.2em;
+  margin-left: 0em;
   font-size: 7em;
   margin-bottom: 0em;
-  padding: 0.05em 0.2em 0em;
+  padding: 0em 0.2em 0em;
   line-height: 1em;
   display: inline-block;
+  margin-top: 7%;
 }
-/* line 376, ../sass/_settings.scss */
+/* line 571, ../sass/_settings.scss */
 .hero h3 {
   font-size: 4em;
   margin-top: 0em;
@@ -152,47 +806,58 @@ span.desktop-highlight {
   border-color: rgba(111, 111, 111, 0.8);
 }
 
-/* line 386, ../sass/_settings.scss */
+/* line 579, ../sass/_settings.scss */
+.button.secondary {
+  color: white !important;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 583, ../sass/_settings.scss */
+  .hero h1 {
+    font-size: 2em;
+  }
+}
+/* line 589, ../sass/_settings.scss */
 .experience h2 {
   display: inline-block;
 }
 
-/* line 393, ../sass/_settings.scss */
+/* line 596, ../sass/_settings.scss */
 .skills .HTML5 .meter {
   width: 90%;
 }
-/* line 398, ../sass/_settings.scss */
+/* line 601, ../sass/_settings.scss */
 .skills .CSS3 .meter {
   width: 100%;
 }
-/* line 403, ../sass/_settings.scss */
+/* line 606, ../sass/_settings.scss */
 .skills .Javascript .meter {
   width: 70%;
 }
-/* line 408, ../sass/_settings.scss */
+/* line 611, ../sass/_settings.scss */
 .skills .Git .meter {
   width: 80%;
 }
-/* line 413, ../sass/_settings.scss */
+/* line 616, ../sass/_settings.scss */
 .skills .Backend .meter {
   width: 60%;
 }
-/* line 418, ../sass/_settings.scss */
+/* line 621, ../sass/_settings.scss */
 .skills .Other .meter {
   width: 80%;
 }
-/* line 423, ../sass/_settings.scss */
+/* line 626, ../sass/_settings.scss */
 .skills .Design .meter {
   width: 100%;
 }
 
-/* line 429, ../sass/_settings.scss */
+/* line 632, ../sass/_settings.scss */
 .top-nav {
   position: fixed;
   z-index: 1000;
 }
 
-/* line 435, ../sass/_settings.scss */
+/* line 638, ../sass/_settings.scss */
 .nav,
 .nav a {
   font-family: "pf_din_text_comp_pro_lightRg", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -201,26 +866,26 @@ span.desktop-highlight {
   text-decoration: none;
 }
 
-/* line 440, ../sass/_settings.scss */
+/* line 643, ../sass/_settings.scss */
 .nav li {
   list-style: none;
   display: inline-block;
   padding-right: .5em;
 }
 
-/* line 441, ../sass/_settings.scss */
+/* line 644, ../sass/_settings.scss */
 blockquote p {
   border-left: 1px dashed #999999;
   padding-left: 1em;
 }
 
-/* line 443, ../sass/_settings.scss */
+/* line 646, ../sass/_settings.scss */
 blockquote {
   margin: 1em 2em;
   padding-left: 1em;
 }
 
-/* line 448, ../sass/_settings.scss */
+/* line 651, ../sass/_settings.scss */
 blockquote p:first-letter,
 blockquote li:first-letter {
   float: left;
@@ -230,25 +895,25 @@ blockquote li:first-letter {
   font-weight: bold;
 }
 
-/* line 454, ../sass/_settings.scss */
+/* line 657, ../sass/_settings.scss */
 blockquote p:first-line {
   font-variant: small-caps;
   font-size: 2em;
 }
 
-/* line 456, ../sass/_settings.scss */
+/* line 659, ../sass/_settings.scss */
 blockquote footer {
   font-size: 2em;
   font-style: italic;
   padding-right: 8.33%;
 }
 
-/* line 462, ../sass/_settings.scss */
+/* line 665, ../sass/_settings.scss */
 .bold-header {
   font-family: 'pf_din_text_comp_probold'!important;
 }
 
-/* line 471, ../sass/_settings.scss */
+/* line 674, ../sass/_settings.scss */
 h1.inline,
 h2.inline,
 h3.inline,
@@ -257,32 +922,32 @@ h5.inline {
   display: inline;
 }
 
-/* line 476, ../sass/_settings.scss */
+/* line 679, ../sass/_settings.scss */
 h3 .title {
   font-size: 1.5em;
 }
-/* line 479, ../sass/_settings.scss */
+/* line 682, ../sass/_settings.scss */
 h3 .company {
   font-size: 1.3em;
 }
 
-/* line 484, ../sass/_settings.scss */
+/* line 687, ../sass/_settings.scss */
 .dates {
   font-size: 1.4em !important;
   margin-top: 0em !important;
   opacity: 0.7 !important;
 }
 
-/* line 490, ../sass/_settings.scss */
+/* line 693, ../sass/_settings.scss */
 .experience-item {
   margin-bottom: 2em;
 }
-/* line 492, ../sass/_settings.scss */
+/* line 695, ../sass/_settings.scss */
 .experience-item p {
   line-height: 1.7em;
 }
 
-/* line 500, ../sass/_settings.scss */
+/* line 703, ../sass/_settings.scss */
 div.arrow-right {
   width: 0;
   height: 0;
@@ -292,6 +957,17 @@ div.arrow-right {
   border-top: 80px solid transparent;
   border-bottom: 80px solid transparent;
   margin-bottom: -45px;
+}
+
+/* line 713, ../sass/_settings.scss */
+.top-nav-bar {
+  top: 0!important;
+}
+
+/* line 716, ../sass/_settings.scss */
+#hero-title {
+  display: block;
+  width: 100%;
 }
 
 /* Requires: normalize.css */
@@ -908,18 +1584,18 @@ fieldset legend {
 /* Errors */
 /* line 49, ../../../../.rvm/gems/ruby-1.9.3-p385/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
 .error input, input.error, .error textarea, textarea.error, .error input:focus, input.error:focus, .error textarea:focus, textarea.error:focus {
-  border-color: #c60f13;
-  background-color: rgba(198, 15, 19, 0.1);
+  border-color: #ff4917;
+  background-color: rgba(255, 73, 23, 0.1);
 }
 
 /* line 50, ../../../../.rvm/gems/ruby-1.9.3-p385/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
 .error input:focus, input.error:focus, .error textarea:focus, textarea.error:focus {
-  outline-color: #f5797c;
+  outline-color: #ffc1b0;
 }
 
 /* line 51, ../../../../.rvm/gems/ruby-1.9.3-p385/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
 .error label, label.error {
-  color: #c60f13;
+  color: #ff4917;
 }
 
 /* line 52, ../../../../.rvm/gems/ruby-1.9.3-p385/gems/zurb-foundation-3.2.5/scss/foundation/common/_forms.scss */
@@ -928,7 +1604,7 @@ fieldset legend {
   padding: 6px 4px;
   margin-top: -13px;
   margin-bottom: 12px;
-  background: #c60f13;
+  background: #ff4917;
   color: #fff;
   font-size: 12px;
   font-weight: bold;
@@ -1733,12 +2409,12 @@ that IE7/8 do not support :nth-child.
 }
 /* line 23, ../../../../.rvm/gems/ruby-1.9.3-p385/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_buttons.scss */
 .button.alert {
-  background-color: #c60f13;
-  border: 1px solid #7f0a0c;
+  background-color: #ff4917;
+  border: 1px solid #ca2b00;
 }
 /* line 24, ../../../../.rvm/gems/ruby-1.9.3-p385/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_buttons.scss */
 .button.alert:hover, .button.alert:focus {
-  background-color: #970b0e;
+  background-color: #e33100;
 }
 /* line 26, ../../../../.rvm/gems/ruby-1.9.3-p385/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_buttons.scss */
 .button.secondary {
@@ -1802,11 +2478,11 @@ that IE7/8 do not support :nth-child.
 }
 /* line 45, ../../../../.rvm/gems/ruby-1.9.3-p385/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_buttons.scss */
 .button.disabled.alert, .button[disabled].alert {
-  background-color: #c60f13;
+  background-color: #ff4917;
 }
 /* line 46, ../../../../.rvm/gems/ruby-1.9.3-p385/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_buttons.scss */
 .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
-  background-color: #c60f13;
+  background-color: #ff4917;
   outline: none;
 }
 /* line 48, ../../../../.rvm/gems/ruby-1.9.3-p385/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_buttons.scss */
@@ -2013,7 +2689,7 @@ input[type=submit].button, button.button {
 }
 /* line 106, ../../../../.rvm/gems/ruby-1.9.3-p385/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split.alert:hover, .button.dropdown.split.alert:focus {
-  background-color: #c60f13;
+  background-color: #ff4917;
 }
 /* line 107, ../../../../.rvm/gems/ruby-1.9.3-p385/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split.success:hover, .button.dropdown.split.success:focus {
@@ -2151,8 +2827,8 @@ input[type=submit].button, button.button {
 }
 /* line 134, ../../../../.rvm/gems/ruby-1.9.3-p385/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split.alert > span {
-  background-color: #c60f13;
-  border-left-color: #7f0a0c;
+  background-color: #ff4917;
+  border-left-color: #ca2b00;
 }
 /* line 135, ../../../../.rvm/gems/ruby-1.9.3-p385/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split.success > span {
@@ -2170,7 +2846,7 @@ input[type=submit].button, button.button {
 }
 /* line 139, ../../../../.rvm/gems/ruby-1.9.3-p385/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split.alert > a:hover, .button.dropdown.split.alert > span:hover, .button.dropdown.split.alert > a:focus, .button.dropdown.split.alert > span:focus {
-  background-color: #970b0e;
+  background-color: #e33100;
 }
 /* line 140, ../../../../.rvm/gems/ruby-1.9.3-p385/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split.success > a:hover, .button.dropdown.split.success > span:hover, .button.dropdown.split.success > a:focus, .button.dropdown.split.success > span:focus {
@@ -4052,7 +4728,7 @@ div.alert-box.success {
 }
 /* line 30, ../../../../.rvm/gems/ruby-1.9.3-p385/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_ui.scss */
 div.alert-box.alert {
-  background-color: #c60f13;
+  background-color: #ff4917;
   color: #fff;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
 }
@@ -4112,7 +4788,7 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
 }
 /* line 46, ../../../../.rvm/gems/ruby-1.9.3-p385/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_ui.scss */
 .label.alert {
-  background-color: #c60f13;
+  background-color: #ff4917;
 }
 /* line 47, ../../../../.rvm/gems/ruby-1.9.3-p385/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_ui.scss */
 .label.success {
@@ -4766,7 +5442,7 @@ div.progress.success .meter {
 }
 /* line 272, ../../../../.rvm/gems/ruby-1.9.3-p385/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_ui.scss */
 div.progress.alert .meter {
-  background: #c60f13;
+  background: #ff4917;
 }
 /* line 275, ../../../../.rvm/gems/ruby-1.9.3-p385/gems/zurb-foundation-3.2.5/scss/foundation/components/modules/_ui.scss */
 div.progress.radius {

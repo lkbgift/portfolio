@@ -22,107 +22,80 @@
 	</script>
 </head>
 <body>
-	<div id="topNavArea"></div>
-	<div class="" id="hero">
-		<div class="row hero-wrapper  independent">
-			<div class=" columns hero independent">
-				<div class="lamb">
-					<h1 class="bold-header red-highlight">Remember Lenny </h1>
-				</div>
-			</div>
+	<div class="contain-to-grid top-nav top-nav-bar">
+		<div id="topNavArea"></div>
+	</div>
+	<div class="independent" id="hero" data-magellan-destination='head'>
+		<div class="hero independent text-center">
+			<h1 class="bold-header red-highlight">Remember Lenny</h1>
+		</div>
+		<div class="text-center ">
+			<a class="fc-webicon github large" href="http://github.com/lkbgift">Github</a>
+			<a class="fc-webicon twitter large" href="http://twitter.com/lkbcc">Twitter</a>
+			<a class="fc-webicon linkedin large" href="http://www.linkedin.com/pub/leonard-bogdonoff/25/14b/8a6">LinkedIn</a>
+			<a class="fc-webicon rss large" href="http://lkb.cc/">RSS</a>
+		</div>
 	</div>
 	<div class="" id="services" data-magellan-destination='services'>
-			<div class="row">
-				<div class="header text-center">
-					<h2>Services</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="row">
-					<div class="six column">
-						<div class="six column"> 
-							<img src="images/services/responsive.png" alt="">
-						</div>
-						<div class="six column">
-							<h3>Responsive Development</h3>
-							<h3 class="subheader">
-								Beautiful mobile-ready websites.
-							</h3>
-						</div>
-					</div>
-					<div class="six column">
-						<div class="six column"> 
-							<img src="images/services/ux.jpg" alt="">
-						</div>
-						<div class="six column">
-							<h3>User Experience Research</h3>
-							<h3 class="subheader">Understand your audience and take action.</h3>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="six column">
-						<div class="six column">
-							<h3>E-commerce Websites</h3>
-							<h3 class="subheader">
-								Claim your international market share.
-							</h3>
-						</div>
-						<div class="six column"> 
-							<img src="images/services/ecommerce.jpg" alt="">
-						</div>
-					</div>
-					<div class="six column">
-						<div class="six column">
-							<h3>WordPress Theme</h3>
-							<h3 class="subheader">Bespoke themes built for your needs.</h3>
-						</div>
-						<div class="six column"> 
-							<img src="images/services/wordpress.jpg" alt="">
-						</div>
-					</div>
-				<div class="column twelve" id="clientSeeArea"></div>
-				</div>
-	</div>
-	<div class="" id="consulting" data-magellan-destination='consulting'>
+		<hr>
 		<div class="row">
-			<div class="twelve column text-center">
-				<div class="header">
-					<h2>Consulting</h2>
-				</div>
-				<div id="consultingArea"></div>
-				<div id="contactNowArea"></div>
+			<div class="header text-center">
+				<h2 class="purple-topborder inline-block">Specialty</h2>
 			</div>
-			
+		</div>
+		<div class="row">
+			<div class="three column mobile-two">
+					<img class="hide-for-small" src="images/services/responsive.png" alt="">
+					<h3>Responsive Design</h3>
+					<p>
+						Serve a complete website to any user's device.  
+					</p>
+					<a href="#resume" class="twelve button secondary small"><i class="foundicon-plus"></i> View past clients</a>
+			</div>
+			<div class="three column mobile-two">
+					<img class="hide-for-small" src="images/services/wordpress.jpg" alt="">
+					<h3>WordPress Themes</h3>
+					<p>
+						All themes are personally designed and coded.
+					</p>
+					<a href="#resume" class="twelve  button secondary small"><i class="foundicon-plus"></i> View past clients</a>
+			</div>
+			<div class="three column mobile-two">
+					<img class="hide-for-small" src="images/services/ux.jpg" alt="">
+					<h3>UX Research</h3>
+					<p>
+						Make intelligent decisions based on user data. 
+					</p>
+					<a href="#resume" class="twelve  button secondary small"><i class="foundicon-plus"></i> View past clients</a>
+			</div>
+			<div class="three column mobile-two">
+					<img class="hide-for-small" src="images/services/ecommerce.jpg" alt="">
+					<h3>E-commerce</h3>
+					<p>
+						Sell and manage products from your website. 
+					</p>
+					<a href="#resume" class="twelve  button secondary small"><i class="foundicon-plus"></i> View past clients</a>
+			</div>
+		</div>
 	</div>
-	<div class="row" id="resume" data-magellan-destination='resume'>
-		<div class="experience column eight mobile-four">
-			<h2 class="red-topborder">Experience</h2>
+	<div class="" id="consulting" data-magellan-destination="consulting"></div>
+	
+	<div id="resume" data-magellan-destination='resume'>
+		<hr>
+			<div class="row">
 			<div id="experienceArea"></div>
-		</div>
-		<div class="column four mobile-four">
-			<div class="skills">
-				<h2 class="blue-topborder inline-block">Skills</h2>
-				<div id="skillsArea" class="skills panel"></div>
-			</div>
-			<div class="education">
-				<h2 class="blue-topborder inline-block">Education</h2>
-				<div id="educationArea" class="education panel"></div>
-			</div>
-		</div>
-		<div class="twelve column centered">
-			<div id="resumeDownloadArea" class="text-center"></div>
+			<div id="resumeSideBar" class="column four mobile-four"></div>
+			<div id="resumeDownloadArea" class="twelve column centered text-center"></div>
 		</div>
 	</div>
-	<div id="contact" class="row contactWrapper independent" data-magellan-destination='contact'>
-		<div id="contactForm" class="contactForm column six centered mobile-four"></div>
-	</div>
+	<div id="contact" data-magellan-destination='contact'></div>
 	<!--[if lt IE 7]>
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
 	<script src="javascripts/foundation/foundation.min.js"></script>
   <script src="javascripts/foundation/app.js"></script>
   <script type="text/javascript">
+  
   var topNavData = {
   	left: [
   		{
@@ -132,19 +105,15 @@
   	right: [
   		{
   			"reference": "services",
-  			"title": "Services"
+  			"title": "Specialty"
   		},
   		{
   			"reference": "consulting",
-  			"title": "Consult"
-  		},
-  		{
-  			"reference": "clients",
-  			"title": "Clients"
+  			"title": "Services"
   		},
   		{
   			"reference": "resume",
-  			"title": "Resume"
+  			"title": "Clients"
   		},
   		{
   			"reference": "contact",
@@ -167,8 +136,8 @@
   		},
   		{
 				"image": "images/consulting/training.png",
-  			"title": "Team Training",
-  			"description": "Front-end best practices, web development introduction, and team organization. Emphasis on scalable and maintainable CSS. Experience with SCRUM and iterative development.",
+  			"title": "Topic Training",
+  			"description": "Front-end best practices, web development introduction, and team organization. Emphasis on modern best practices and current technology trends.",
   		}
   	]
   };
@@ -218,19 +187,15 @@
 	    }
 	  ]
 	};
-	var clientSeeData = {
-		ctaData: [
-			{
-				"ctaLocation": "#client",
-				"buttonText": "View Past Clients"
-			}
-		]
-	};
 	var contactNowData = {
 		ctaData: [
 			{
 				"ctaLocation": "#contact",
-				"buttonText": "Contact Lenny"
+				"buttonText": "Contact Lenny",
+				"class": "button round",
+				"prior": {
+					"class": "foundicon-phone"
+				}
 			}
 		]
 	};
@@ -238,7 +203,11 @@
 		ctaData: [
 			{
 				"ctaLocation": "downloads/RememberLenny.pdf",
-				"buttonText": "Download Resume PDF"
+				"buttonText": " Download Resume (PDF)",
+				"class": "alert button small",
+				"prior": {
+					"class": "foundicon-page"
+				}
 			}
 		]
 	};
@@ -340,13 +309,15 @@
 				"contactLabel": "Contact",
 				"phonePlaceholder": "(+##)-###-###-####",
 				"textareaPlaceholder": "Once upon a time...",
-				"inputButton": "Lets Talk."
+				"inputButton": "Lets Talk.",
+				"prior":{
+					"class": "foundicon-phone"
+				}
 			}
 		]
 	};
 
 	var topNavTemplate = '{{#left}}'+
-		 '<div class="contain-to-grid top-nav"> ' +
 		   '<nav class="top-bar ">' +
 		      '<ul>' +
 						'<li class="name"><h1><a href="#">{{title}}</a></h1></li>' +
@@ -362,29 +333,50 @@
 								'{{/right}}' + 
 				       '</ul>' +
 			      '</section>' +
-			   '</nav>' +
-			'</div>';
-	var consultingTemplate = '{{#consulting}}' +
-			'<div class="four column">' +
-        '<div class="consulting-item">' +
-					'<img  src="{{image}}" alt="">' +
-					'<h3>{{title}}</h3>' +
-          '<p class="text-left">{{description}}</p>' +
-        '</div>' +
+			   '</nav>';
+	var consultingTemplate = 
+		'<hr><div class="row">' +
+			'<div class="twelve column text-center">' +
+				'<div class="header">'+
+					'<h2 class="blue-topborder inline-block">Services</h2>'+
+				'</div>'+
+		'{{#consulting}}' +
+		'<div class="four column">' +
+      '<div class="consulting-item">' +
+				'<img  src="{{image}}" alt="">' +
+				'<h3>{{title}}</h3>' +
+        '<p class="text-left">{{description}}</p>' +
       '</div>' +
-      '{{/consulting}}';
-  var experienceTemplate = '{{#experience}} <div class="experience-item">' + 
+    '</div>' +
+    '<div class="hide-for-large-up">' +
+    '<hr class="hide-for-medium show-for-small-down"> ' +
+    '</div>' +
+    '{{/consulting}}'+
+    '</div>'+
+    '<div id="contactNowArea"></div>';
+  var experienceTemplate = 
+  	'<div class="experience column eight mobile-four">' +
+		'<h2 class="red-topborder">Past Employers</h2>' +
+  	'{{#experience}} <div class="experience-item">' + 
 	  '<h3 class="title inline">{{position}}</h3> | <h3 class="company subheader inline">{{company}}</h3>' + 
 	  '<h4 class="dates">{{startDate}} - {{endDate}}</h4>' + 
-	  '<p>{{description}}</p> </div> {{/experience}}'; 
-  var ctaTemplate = '<div class="text-center"><hr>{{#ctaData}}<a href="{{ctaLocation}}" class="button round small">{{buttonText}}</a>{{/ctaData}}<hr></div>'; 
-  var skillsTemplate = '<ul class="">' +
+	  '<p>{{description}}</p> </div> {{/experience}}' +
+	  '</div>'
+  var ctaTemplate = '<div class="text-center">{{#ctaData}}<a href="{{ctaLocation}}" class="{{class}}">{{#prior}}<i class="{{class}}""></i>{{/prior}} {{buttonText}}</a>{{/ctaData}}</div>'; 
+  var skillsTemplate =   '<div id="skillsArea" class="skills panel">'+
+  	'<div class="skills">' +
+		'<h2 class="blue-topborder inline-block">Skills</h2>' +
+  	'<ul class="">' +
 		'{{#skills}} {{#rowIn}}<div class="row">{{/rowIn}} <li class=" no-list-style {{width}} {{column}} {{skill}}"><h3>{{skill}}</h3>' +
 		'<div class="radius progress   {{colorContext}}"><span class="meter"></span></div>' +
 		'<ul class="inline-list">' +
 		'{{#relevance}}<li>{{.}}</li>{{/relevance}}' +
-		'</ul></li> {{#rowOut}}</div>{{/rowOut}}</ul>{{/skills}}';
-  var educationTemplate = '{{#education}}'+
+		'</ul></li> {{#rowOut}}</div>{{/rowOut}}</ul>{{/skills}}</div></div>'+
+		'<div id="educationArea"></div>';
+  var educationTemplate = '<div id="educationArea" class="education panel">'+
+  	'<div class="education">' +
+		'<h2 class="blue-topborder inline-block">Education</h2>' +
+  	'{{#education}}'+
 		'{{#rowin}}<div class="row">{{/rowin}}'+
 		'{{#smallin}}<div class="six column">{{/smallin}}'+
 		'<h4 class="institution">{{institution}}</h4>'+
@@ -393,8 +385,13 @@
 		'{{organization}} {{startDate}}-{{endDate}}</h5>{{/activities}}' +
 		'{{#smallout}}</div>{{/smallout}}'+
 		'{{#rowout}}</div></div>{{/rowout}}'+
-		'{{/education}}';
-	var contactFormTemplate = '{{#contactForm}}<h2 class="green-topborder">{{headerMessage}}</h2>'+
+		'{{/education}}' +
+		'</div>';
+	var contactFormTemplate = 
+		'<hr>' +
+		'<div class="row contactWrapper independent">'+
+		'<div id="contactForm" class="contactForm column six centered mobile-four">'+
+		'{{#contactForm}}<h2 class="green-topborder">{{headerMessage}}</h2>'+
 		'<form>'+
 		 '<label>{{nameLabel}}</label>'+
 		  '<input type="text" placeholder="{{namePlaceholder}}" />'+
@@ -404,34 +401,32 @@
 		      '<input type="text" placeholder="{{locationPlaceholder}}" />'+
 		    '</div>'+
 		    '<div class="six columns">'+
-		      '<label>{{contactLabel}}Contact</label>'+
+		      '<label>{{contactLabel}}</label>'+
 		      '<input type="text" placeholder="{{phonePlaceholder}}" />'+
 		    '</div>'+
 		  '</div>'+
 		  '<label>{{messageLabel}}</label>'+
 		  '<textarea placeholder="{{textareaPlaceholder}}"></textarea>'+
 		  '<input type="submit" class="large success radius button even twelve" value="{{inputButton}}" />'+
-		'</form>{{/contactForm}}';
+		'</form>{{/contactForm}}</div></div>';
 
   var viewTopNav 					= Mustache.to_html(topNavTemplate, 			topNavData); 
   var viewConsulting 			= Mustache.to_html(consultingTemplate, 	consultingData); 
   var viewExperience 			= Mustache.to_html(experienceTemplate, 	experienceData); 
   var viewResumeDownload 	= Mustache.to_html(ctaTemplate, 				resumeDownloadData); 
-  var viewClient 					= Mustache.to_html(ctaTemplate, 				clientSeeData); 
   var viewContactNow	 		= Mustache.to_html(ctaTemplate, 				contactNowData); 
   var viewSkills 					= Mustache.to_html(skillsTemplate, 			skillsData); 
   var viewEducation 			= Mustache.to_html(educationTemplate, 	educationData); 
   var viewContactForm 		= Mustache.to_html(contactFormTemplate, contactFormData); 
 
   $('#topNavArea').html(viewTopNav);
-  $('#consultingArea').html(viewConsulting);
+  $('#consulting').html(viewConsulting);
   $('#experienceArea').html(viewExperience);
-  $('#clientSeeArea').html(viewClient);
   $('#contactNowArea').html(viewContactNow);
   $('#resumeDownloadArea').html(viewResumeDownload);
-  $('#skillsArea').html(viewSkills);
+  $('#resumeSideBar').html(viewSkills)
   $('#educationArea').html(viewEducation);
-  $('#contactForm').html(viewContactForm);
+  $('#contact').html(viewContactForm);
 
 	</script>
 </body>
