@@ -962,14 +962,41 @@ div.arrow-right {
 /* line 713, ../sass/_settings.scss */
 .top-nav-bar {
   top: 0!important;
+  box-shadow: 0px 2px 5px #444444;
 }
 
-/* line 716, ../sass/_settings.scss */
+/* line 717, ../sass/_settings.scss */
 #hero-title {
   display: block;
   width: 100%;
 }
 
+/* line 721, ../sass/_settings.scss */
+.available {
+  background: #222;
+  padding-top: .75em;
+  padding-bottom: 1em;
+  position: fixed;
+  bottom: 0;
+  display: none;
+  box-shadow: inset 0px 5px 20px -10px #111111;
+}
+/* line 729, ../sass/_settings.scss */
+.available h5.subheader {
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 734, ../sass/_settings.scss */
+  .available {
+    display: relative;
+  }
+
+  /* line 737, ../sass/_settings.scss */
+  .independent {
+    margin-top: 20% !important;
+  }
+}
 /* Requires: normalize.css */
 /* Global Reset & Standards ---------------------- */
 /* line 5, ../../../../.rvm/gems/ruby-1.9.3-p385/gems/zurb-foundation-3.2.5/scss/foundation/common/_globals.scss */

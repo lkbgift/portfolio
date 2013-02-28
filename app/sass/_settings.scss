@@ -712,8 +712,29 @@ div.arrow-right {
 }
 .top-nav-bar{
   top: 0!important;
+  box-shadow: 0px 2px 5px #444;
 }
 #hero-title{
   display: block;
   width: 100%;
+}
+.available{
+  background: #222;
+  padding-top:.75em;
+  padding-bottom:1em;
+  position: fixed;
+  bottom: 0;
+  display: none;
+  box-shadow: inset 0px 5px 20px -10px #111;
+  h5.subheader{
+    margin-bottom: 0px
+  }
+}
+@media only screen and (max-width: 767px) {
+  .available{
+    display: relative;
+  }
+  .independent{
+    margin-top: 20% !important;
+  }
 }

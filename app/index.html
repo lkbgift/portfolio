@@ -30,9 +30,9 @@
 			<h1 class="bold-header red-highlight">Remember Lenny</h1>
 		</div>
 		<div class="text-center ">
-			<a class="fc-webicon github large" href="http://github.com/lkbgift">Github</a>
-			<a class="fc-webicon twitter large" href="http://twitter.com/lkbcc">Twitter</a>
-			<a class="fc-webicon linkedin large" href="http://www.linkedin.com/pub/leonard-bogdonoff/25/14b/8a6">LinkedIn</a>
+			<a class="fc-webicon github large" href="http://github.com/lkbgift">Github</a> 
+			<a class="fc-webicon twitter large" href="http://twitter.com/lkbcc">Twitter</a> 
+			<a class="fc-webicon linkedin large" href="http://www.linkedin.com/pub/leonard-bogdonoff/25/14b/8a6">LinkedIn</a> 
 			<a class="fc-webicon rss large" href="http://lkb.cc/">RSS</a>
 		</div>
 	</div>
@@ -89,6 +89,13 @@
 		</div>
 	</div>
 	<div id="contact" data-magellan-destination='contact'></div>
+	<div id="footer" class="twelve centered text-center available">
+		<h5 id="footer-text" class="inline-block subheader">Currently <u>not</u> accepting new projects. </h5>
+		<h5 class="inline-block"><a class="fc-webicon github small" href="http://github.com/lkbgift">Github</a> 
+			<a class="fc-webicon twitter small" href="http://twitter.com/lkbcc">Twitter</a> 
+			<a class="fc-webicon linkedin small" href="http://www.linkedin.com/pub/leonard-bogdonoff/25/14b/8a6">LinkedIn</a> 
+			<a class="fc-webicon rss small" href="http://lkb.cc/">RSS</a></h5> 
+	</div>
 	<!--[if lt IE 7]>
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
@@ -352,8 +359,8 @@
     '<hr class="hide-for-medium show-for-small-down"> ' +
     '</div>' +
     '{{/consulting}}'+
-    '</div>'+
-    '<div id="contactNowArea"></div>';
+    '<div id="contactNowArea"></div>'+
+    '</div>';
   var experienceTemplate = 
   	'<div class="experience column eight mobile-four">' +
 		'<h2 class="red-topborder">Past Employers</h2>' +
@@ -392,21 +399,21 @@
 		'<div class="row contactWrapper independent">'+
 		'<div id="contactForm" class="contactForm column six centered mobile-four">'+
 		'{{#contactForm}}<h2 class="green-topborder">{{headerMessage}}</h2>'+
-		'<form>'+
+		'<form action="MAILTO:lkbgift@gmail.com" method="post" enctype="text/plain">'+
 		 '<label>{{nameLabel}}</label>'+
-		  '<input type="text" placeholder="{{namePlaceholder}}" />'+
+		  '<input type="text" name="Name" placeholder="{{namePlaceholder}}" />'+
 		  '<div class="row">'+
 		    '<div class="six columns">'+
 		    	'<label>{{locationLabel}}</label>'+
-		      '<input type="text" placeholder="{{locationPlaceholder}}" />'+
+		      '<input type="text" name="Location" placeholder="{{locationPlaceholder}}" />'+
 		    '</div>'+
 		    '<div class="six columns">'+
 		      '<label>{{contactLabel}}</label>'+
-		      '<input type="text" placeholder="{{phonePlaceholder}}" />'+
+		      '<input type="text" name="Phone" placeholder="{{phonePlaceholder}}" />'+
 		    '</div>'+
 		  '</div>'+
 		  '<label>{{messageLabel}}</label>'+
-		  '<textarea placeholder="{{textareaPlaceholder}}"></textarea>'+
+		  '<textarea placeholder="{{textareaPlaceholder}}" name="Message"></textarea>'+
 		  '<input type="submit" class="large success radius button even twelve" value="{{inputButton}}" />'+
 		'</form>{{/contactForm}}</div></div>';
 
@@ -427,6 +434,13 @@
   $('#resumeSideBar').html(viewSkills)
   $('#educationArea').html(viewEducation);
   $('#contact').html(viewContactForm);
+	$(window).bind('scroll', function(){
+		if($(this).scrollTop() > 200) {
+			$("#footer").slideDown();
+		} else {
+			$("#footer").slideUp();
+		}
+	});
 
 	</script>
 </body>
